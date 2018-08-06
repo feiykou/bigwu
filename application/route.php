@@ -9,5 +9,5 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 use think\Route;
-Route::get('/','home/index/index');
+Route::get('/home','home/index/index');
 Route::get('/detail','home/index/detail');
