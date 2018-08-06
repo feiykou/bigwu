@@ -9,5 +9,3 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-use think\Route;
-//Route::get('/','admin/index/index');
