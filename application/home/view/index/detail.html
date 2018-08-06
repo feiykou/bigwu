@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>详情页 - 飞扬</title>
     <link rel="stylesheet" href="__STATIC__/home/css/public.css">
-    <link rel="stylesheet" href="__STATIC__/home/css/style.css">
+    <link rel="stylesheet" href="__STATIC__/home/css/banner.css">
+    <link rel="stylesheet" href="__STATIC__/home/css/detail.css">
 </head>
 <body scroll="no">
 <div class="container">
@@ -100,142 +101,34 @@
             </a>
         </div>
     </div>
-    <style>
-        .content{
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 2000px;
-        }
-        .head-imgs{
-            position: relative;
-            height: 666px;
-            overflow: hidden;
-        }
-        .head-imgs span{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            left: auto;
-            right: 0px;
-        }
-        .head-imgs img{
-            position: absolute;
-            left: auto;
-            right: 0;
-            transform: scale(1.05) rotate(0deg);
-            transform-origin: 50% 50% 0;
-        }
-        .inner-box{
-            padding: 0 150px;
-            margin-top: 120px;
-        }
 
-        .main-tit{
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 6px;
-        }
-        .main-info{
-            color: #7b7c7b;
-            font-weight: bold;
-            line-height: 18px;
-            font-size: 12px;
-        }
-        .description{
-            margin-top: 50px;
-        }
-        .information{
-            margin-bottom: 50px;
-        }
-
-        .colum-layout{
-        }
-        .colum-layout .col{
-            padding-bottom: 30px;
-            text-align: justify;
-        }
-        .fontStyle{
-            -webkit-transform: scale(1,.97);
-            transform-origin: 50% 0;
-            letter-spacing: .04em;
-        }
-        .info-tit{
-            font-size: 16px;
-            font-weight: bold;
-
-        }
-        .info-con{
-            /* display: table; */
-            width: 100%;
-            line-height: 30px;
-            margin-top: 10px;
-            /* -webkit-text-stroke: .2px #000; */
-            color: #7b7c7b;
-            /* -webkit-transform: scale(1,.92); */
-        }
-        .div-table{
-            width: 100%;
-            display: table;
-        }
-        .div-table-cell{
-            display: table-cell;
-            padding: 5px;
-            text-align: left;
-            padding-left: 0;
-        }
-        .table-col{
-            width: 190px;
-        }
-
-        .detail-img li{
-            margin-top: 50px;
-        }
-        .detail-img img{
-            width: 100%;
-        }
-
-        .detail-info-wrap{
-            position: relative;
-            float: left;
-            width: 850px;
-        }
-        .detail-img-wrap{
-            float: right;
-            width: 648px;
-            height: 460px;
-        }
-        .detail-img-wrap img{
-            width: 100%;
-            height: 100%;
-        }
-
-        .detail-btn{
-            position: absolute;
-            right: 0;
-            bottom: 24px;
-        }
-        .detail-btn .btn{
-            display: inline-block;
-            border:1px solid #999;
-            width: 168px;
-            height: 50px;
-            line-height: 50px;
-            text-align: center;
-            background-color: #f5f3ef;
-            color: #000;
-        }
-        .detail-btn .btn:hover{
-            background-color: #fff;
-        }
-    </style>
     <div class="content">
         <div class="content-wrap">
-            <div class="head-imgs">
-                <span class="phone"><img src="__STATIC__/home/images/head1.jpg" alt=""></span>
+            <div class="bw-banner">
+                <div class="dot-nav">
+                    <div class="dot-wrap">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="banner-wrap">
+                    <ul>
+                        <li class="part part1">
+                            <img src="__STATIC__/home/images/head1.jpg" data-width="1600" data-height="1025" alt="">
+                        </li>
+                        <li class="part part2">
+                            <img src="__STATIC__/home/images/b2.jpg" data-width="1600" data-height="1025" alt="">
+                        </li>
+                        <li class="part part3">
+                            <img src="__STATIC__/home/images/b3.jpg" data-width="1600" data-height="1025" alt="">
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <!-- <div class="head-imgs">
+                <span class="phone"><img src="__STATIC__/home/images/head1.jpg" alt=""></span>
+            </div> -->
             <div class="inner-box">
                 <div class="description fontStyle">
                     <div class="detail-main-con clearfix">
@@ -278,7 +171,7 @@
                             </div>
                         </div>
                         <div class="detail-img-wrap">
-                            <img src="__STATIC__/home/images/p1.jpg" alt="">
+                            <img src="__STATIC__/home/images/side-img.png" alt="">
                         </div>
                     </div>
                     <div class="detail-img">
@@ -302,12 +195,69 @@
             </div>
         </div>
     </div>
+
+    <style media="screen">
+        .kerning{
+            -webkit-font-feature-settings: normal;
+            -ms-font-feature-settings: normal;
+            -o-font-feature-settings: normal;
+            font-feature-settings: normal;
+        }
+        .footer{
+            border-top: 1px solid #c6c6c6;
+        }
+        .footer .inner-box{
+            position: relative;
+            padding-top: 200px;
+            padding-bottom: 65px;
+            font-size: 12px;
+            color: #999;
+        }
+        .footer-ullist{
+            margin-left: 15px;
+            font-size: 0;
+        }
+        .footer-ullist li{
+            display: inline-block;
+            font-size: 12px;
+        }
+        .footer-ullist li a{
+            color: #999;
+        }
+        .footer-h2-logo img{
+            width: 100px;
+        }
+    </style>
+    <div class="footer">
+        <div class="inner-box">
+            <h2 class="footer-h2-logo"><img src="__STATIC__/home/images/bw-logo.png" alt=""></h2>
+            <div class="wrap clearfix">
+                <div class="meta-wrap fl">
+                    <div class="address fl kerning">
+                        107-0061 東京都港区北青山2丁目11番3号 A-PLACE青山
+                    </div>
+                    <ul class="footer-ullist fl">
+                        <li>大误联系方式：</li>
+                        <li><a href="tel:03-5785-6800">03-5785-6800</a></li>
+                    </ul>
+                </div>
+                <div class="copyright-wrap fr">© 2016 SUN-AD Inc. All Rights Reserved.</div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
 <script src="__STATIC__/home/js/jquery.js"></script>
+<script type="text/javascript" src="__STATIC__/home/js/jquery-animate-transform.js"></script>
+<!-- <script type="text/javascript" src="__STATIC__/home/js/jquery-css-transform.js"></script> -->
 <script src="https://cdn.bootcss.com/jquery-easing/1.4.1/jquery.easing.js"></script>
+<script type="text/javascript" src="__STATIC__/home/js/banner.js"></script>
 <script type="text/javascript">
+    bannerJson.entry({
+        animate: 'scale'
+    });
+
     var $navAll = $(".nav-all");
     var $secli = $navAll.find('.second .set').children();
     $(".btn-menu").on('click',function(){

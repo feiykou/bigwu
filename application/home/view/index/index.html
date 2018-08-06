@@ -1,658 +1,205 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="__STATIC__/home/css/public.css">
-    <style>
-        html,body{ background-color: #F7F8F7; overflow: hidden;}
-
-        a {
-            transition-timing-function: cubic-bezier(.165,.84,.44,1);
-            transition-duration: 240ms;
-            transition-property: color,background-color,border,opacity;
-            text-decoration: none;
-            color: #000;
-        }
-        .haeder{background-color: #fff;}
-        .btn-menu{
-            position: fixed;
-            z-index: 20;
-            left: 75px;
-            top: 40px;
-            cursor: pointer;
-        }
-        .btn-menu a{
-            display: block;
-            width: 60px;
-            height: 60px;
-        }
-        .btn-menu ul{
-            position: relative;
-            transition: transform 240ms cubic-bezier(.165,.84,.44,1);
-            height: 100%;
-        }
-        .btn-menu li{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 52px;
-            height: 2px;
-            background-color: #000;
-            transform: translate(-50%,0);
-            transition-timing-function: cubic-bezier(.165,.84,.44,1);
-            transition-duration: 240ms;
-            transition-property: width,margin,opacity,transform;
-        }
-
-        .btn-menu a:active ul li:nth-child(1), .btn-menu a:hover ul li:nth-child(1) {
-            margin-top: -8px;
-        }
-        .btn-menu a:active ul li:nth-child(2), .btn-menu a:hover ul li:nth-child(2) {
-            margin-top: 8px;
-        }
-        .btn-menu li:nth-child(1){
-            margin-top: -4px;
-        }
-        .btn-menu li:nth-child(2){
-            margin-top: 4px;
-        }
-        .btn-menu.close a ul li:nth-child(1){
-            -webkit-transform: translate(-50%,0) rotate(165deg);
-            -ms-transform: translate(-50%,0) rotate(165deg);
-            transform: translate(-50%,0) rotate(165deg);
-        }
-        .btn-menu.close a ul li:nth-child(2){
-            -webkit-transform: translate(-50%,0) rotate(-165deg);
-            -ms-transform: translate(-50%,0) rotate(-165deg);
-            transform: translate(-50%,0) rotate(-165deg);
-        }
-        .btn-menu.close a ul li {
-            margin-top: 0!important;
-        }
-
-        .btn-menu.close:active ul li:nth-child(1), .btn-menu.close:focus ul li:nth-child(1),.btn-menu.close:hover ul li:nth-child(1) {
-            -webkit-transform: translate(-50%,0) rotate(135deg);
-            -ms-transform: translate(-50%,0) rotate(135deg);
-            transform: translate(-50%,0) rotate(135deg);
-        }
-        .btn-menu.close:active ul li:nth-child(2), .btn-menu.close:focus ul li:nth-child(2),.btn-menu.close:hover ul li:nth-child(2) {
-            -webkit-transform: translate(-50%,0) rotate(-135deg);
-            -ms-transform: translate(-50%,0) rotate(-135deg);
-            transform: translate(-50%,0) rotate(-135deg);
-        }
-
-    </style>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="__STATIC__/home/css/public.css">
+	<link rel="stylesheet" href="__STATIC__/home/css/banner.css">
+	<link rel="stylesheet" href="__STATIC__/home/css/style.css">
 </head>
 <body scroll="no">
-<style>
-    .inner-nav{
-        position: relative;
-        z-index: 1;
-    }
-    .inner-nav .nav-wrap{
-        position: absolute;
-        top: 65px;
-        right: 80px;
-        min-width: calc(100% - 65px);
-        pointer-events: none;
-    }
-    .inner-nav .nav-wrap>* {
-        float: right;
-    }
-    .global{
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        flex-direction: row-reverse;
-        -webkit-flex-direction: row-reverse;
-        -ms-flex-direction: row-reverse;
-    }
-    .nav-wrap ul{
-        -ms-writing-mode: tb-rl;
-        -webkit-writing-mode: vertical-rl;
-        writing-mode: vertical-rl;
-        -webkit-font-feature-settings: 'vpal';
-        -ms-font-feature-settings: 'vpal';
-        -o-font-feature-settings: 'vpal';
-        font-feature-settings: 'vpal';
-    }
-    .nav-wrap ul.set li{
-        white-space: nowrap;
-        font-size: 20px;
-        line-height: 42px;
-        font-weight: bold;
-    }
-    .nav-wrap ul.set li a{
-        pointer-events: auto;
-        -webkit-transform: scale(1,.92);
-        -ms-transform: scale(1,.92);
-        transform: scale(1,.92);
-        -webkit-transform-origin: 50% 0;
-        -ms-transform-origin: 50% 0;
-        transform-origin: 50% 0;
-        letter-spacing: -.08em;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        letter-spacing: .2em;
-        font-family: sans-serif;
-    }
+	<div class="haeder">
+		<div class="inner-nav">
+			<div class="nav-wrap">
+				<div class="global">
+					<ul class="set">
+						<li><a href="">首页</a></li>
+						<li><a href="">公司简介</a></li>
+						<li><a href="">产品</a></li>
+					</ul>
+					<ul class="sub">
+						<li><a href="">所在地</a></li>
+						<li><a href="">公司简介</a></li>
+					</ul>
+				</div>
+				<div class="second">
+					<ul class="set">
+						<li><a href=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
+		<div class="nav-all" style="pointer-events: none; opacity: 0; visibility: hidden;">
+			<div class="inner-wrap">
+				<div class="nav-con-wrap">
+					<div class="wrap">
+						<h1 class="logo">
+							<a href="#"><img src="__STATIC__/home/images/bw-logo.png" width="100" height="100" alt=""></a>
+						</h1>
+						<div class="nav-wrap clearfix">
+							<div class="global">
+								<ul class="set">
+									<li><a href="">首页</a></li>
+									<li><a href="">公司简介</a></li>
+									<li><a href="">产品</a></li>
+								</ul>
+								<ul class="sub">
+									<li><a href="">所在地</a></li>
+									<li><a href="">公司简介</a></li>
+								</ul>
+							</div>
+							<div class="second">
+								<div class="row">
+									<ul class="set">
+										<li style="opacity: 0;"><a href="#"><span>雪屋猫砂盆</span></a></li>
+										<li><a href="#"><span>吸吸君膨润土猫砂</span></a></li>
+										<li><a href="#"><span>Dr.p猫砂伴侣8包装</span></a></li>
+										<li><a href="#"><span>黑洞膨润土猫砂</span></a></li>
+										<li><a href="#"><span>宠物喂药器</span></a></li>
+										<li><a href="#"><span>除毛按摩刷</span></a></li>
+										<li><a href="#"><span>雪屋猫砂盆</span></a></li>
+										<li><a href="#"><span>吸吸君膨润土猫砂</span></a></li>
+										<li><a href="#"><span>Dr.p猫砂伴侣8包装</span></a></li>
+										<li><a href="#"><span>黑洞膨润土猫砂</span></a></li>
+										<li><a href="#"><span>宠物喂药器</span></a></li>
+										<li><a href="#"><span>除毛按摩刷</span></a></li>
+										<li><a href="#"><span>除毛按摩刷</span></a></li>
+										<li><a href="#"><span>雪屋猫砂盆</span></a></li>
+										<li><a href="#"><span>吸吸君膨润土猫砂</span></a></li>
+										<li><a href="#"><span>Dr.p猫砂伴侣8包装</span></a></li>
+										<li><a href="#"><span>黑洞膨润土猫砂</span></a></li>
+										<li><a href="#"><span>宠物喂药器</span></a></li>
+										<li><a href="#"><span>除毛按摩刷</span></a></li>
+									</ul>
+								</div>
+								<!-- <div class="row">
+									<ul class="set">
+										<li><a href="#"><span>雪屋猫砂盆</span></a></li>
+										<li><a href="#"><span>吸吸君膨润土猫砂</span></a></li>
+										<li><a href="#"><span>Dr.p猫砂伴侣8包装</span></a></li>
+										<li><a href="#"><span>黑洞膨润土猫砂</span></a></li>
+										<li><a href="#"><span>宠物喂药器</span></a></li>
+										<li><a href="#"><span>除毛按摩刷</span></a></li>
+									</ul>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btn-menu">
+			<a href="javascript:;">
+				<ul>
+					<li></li>
+					<li></li>
+				</ul>
+			</a>
+		</div>
+	</div>
 
-    .nav-wrap ul.sub{
-        padding-right: 20px;
-    }
-    .nav-wrap ul.sub li{
-        line-height: 22px;
-    }
-    .nav-wrap ul.sub li a{
-        color: #7b7c7b;
-        font-size: 12px;
-        letter-spacing: .05em;
-        font-weight: bold;
-        pointer-events: auto;
-    }
+	<style>
+		.fuller-container{
+			padding-top: 192px;
+		}
 
-    .nav-wrap ul li a:hover{
-        color: #e70014;
-    }
+	</style>
+	<div class="fuller-container">
+		<div class="bw-banner">
+			<div class="dot-nav">
+				<div class="dot-wrap">
+					<span class="active"></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="banner-wrap">
+				<ul>
+					<li class="part part1">
+						<img src="__STATIC__/home/images/b11.gif" data-width="1600" data-height="1025" alt="">
+					</li>
+					<li class="part part2">
+						<img src="__STATIC__/home/images/b12.jpg" data-width="1600" data-height="1025" alt="">
+					</li>
+					<li class="part part3">
+						<img src="__STATIC__/home/images/b13.jpg" data-width="1600" data-height="1025" alt="">
+					</li>
+				</ul>
+			</div>
 
+		</div>
+	</div>
 
-    .nav-all{
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #F7F8F7;
-        z-index: 10;
-        overflow-x: hidden;
-        overflow-y: auto;
-        box-sizing: border-box;
-        padding-bottom: 20px
-    }
-</style>
-<div class="haeder">
-    <div class="inner-nav">
-        <div class="nav-wrap">
-            <div class="global">
-                <ul class="set">
-                    <li><a href="">首页</a></li>
-                    <li><a href="">公司简介</a></li>
-                    <li><a href="">产品</a></li>
-                </ul>
-                <ul class="sub">
-                    <li><a href="">所在地</a></li>
-                    <li><a href="">公司简介</a></li>
-                </ul>
-            </div>
-            <div class="second">
-                <ul class="set">
-                    <li><a href=""></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <style>
-        .inner-wrap{
-            position: absolute;
-            left: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            box-sizing: border-box;
-            padding: 0 80px;
-        }
-        .nav-con-wrap{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .nav-con-wrap .wrap{
+	<script src="__STATIC__/home/js/jquery.js"></script>
+	<script type="text/javascript" src="__STATIC__/home/js/jquery-animate-transform.js"></script>
+	<script src="https://cdn.bootcss.com/jquery-easing/1.4.1/jquery.easing.js"></script>
+	<script type="text/javascript" src="__STATIC__/home/js/banner.js"></script>
+	<script>
+		bannerJson.entry({
+	        animate: 'originX',
+			switch_time: 1000,
+			setTime: 5000,
+			animate_time: 10000
+	    });
 
-            display: inline-block;
-            padding-top: 95px;
-            padding-bottom: 40px;
-            text-align: left;
-        }
-        .nav-con-wrap .wrap .logo{
-            text-align: right;
-            margin-bottom: 20px;
-            margin-top: -20px;
-        }
-        .nav-con-wrap .wrap .nav-wrap{
-            display: flex;
-            flex-direction: row-reverse;
-            pointer-events: auto;
-        }
-        .nav-con-wrap .nav-wrap .second{
-        }
-        .nav-con-wrap .nav-wrap .global{
-            margin-left: 52px;
-        }
-        .nav-con-wrap .nav-wrap .second ul{
-            text-align: left;
-        }
-        .nav-con-wrap .nav-wrap .second ul li{
-            -ms-writing-mode: tb-rl;
-            -webkit-writing-mode: vertical-rl;
-            writing-mode: vertical-rl;
-            -webkit-font-feature-settings: 'vpal';
-            -ms-font-feature-settings: 'vpal';
-            -o-font-feature-settings: 'vpal';
-            font-feature-settings: 'vpal';
-            font-size: 16px;
-            line-height: 42px;
-            opacity: 0;
-            transition: all 0.5s ease-in-out;
-            -moz-transition: all 0.5s ease-in-out; /* Firefox 4 */
-            -webkit-transition: all 0.5s ease-in-out; /* Safari 和 Chrome */
-            -o-transition: all 0.5s ease-in-out; /* Opera */
-            transform:translateY(5px);
-            -ms-transform:rotate(5px); 	/* IE 9 */
-            -moz-transform:rotate(5px); 	/* Firefox */
-            -webkit-transform:rotate(5px); /* Safari 和 Chrome */
-            -o-transform:rotate(5px); 	/* Opera */
-        }
-        .nav-con-wrap .nav-wrap .second ul li.animate_trans{
-            transform:translateY(0px);
-            -ms-transform:rotate(0px); 	/* IE 9 */
-            -moz-transform:rotate(0px); 	/* Firefox */
-            -webkit-transform:rotate(0px); /* Safari 和 Chrome */
-            -o-transform:rotate(0px); 	/* Opera */
-            transition: all 0.5s ease-in-out;
-            -moz-transition: all 0.5s ease-in-out; /* Firefox 4 */
-            -webkit-transition: all 0.5s ease-in-out; /* Safari 和 Chrome */
-            -o-transition: all 0.5s ease-in-out; /* Opera */
-        }
-        .nav-con-wrap .nav-wrap .second ul a{
-            position: relative;
-            padding-top: 12px;
-        }
-        .nav-con-wrap .nav-wrap .second ul a:before{
-            font-family: '微软雅黑';
-            font-size: 10px;
-            font-size: 0.5rem;
-            position: absolute;
-            top: 0;
-            right: 50%;
-            display: block;
-            content: '>';
-            text-align: center;
-            pointer-events: none;
-            color: #7b7c7b;
-            top: -3px;
-        }
-        .nav-con-wrap .nav-wrap .second ul a:hover:before{
-            -webkit-animation:arrow .4s 1 cubic-bezier(.175,.885,.32,1.275);
-            animation:arrow .4s 1 cubic-bezier(.175,.885,.32,1.275)
-        }
-        .nav-con-wrap .nav-wrap .second ul a span{
-            -webkit-transform: scale(1,.92);
-            -ms-transform: scale(1,.92);
-            transform: scale(1,.92);
-            -webkit-transform-origin: 50% 0;
-            -ms-transform-origin: 50% 0;
-            transform-origin: 50% 0;
-            letter-spacing: -.08em;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            line-height: inherit;
-            display: inline-block;
-            letter-spacing: .3em!important;
-            text-align: left;
-        }
+		var $navAll = $(".nav-all");
+		var $secli = $navAll.find('.second .set').children();
+		$(".btn-menu").on('click',function(){
+			if(!$(this).hasClass('close')){
+				$(this).addClass("close");
+				$navAll.css({
+					'pointerEvents': 'auto',
+					'visibility': 'visible'
+				}).stop(true,true).animate({
+					'opacity': 1
+				},{
+					duration: 100,
+					easing:'easeInQuad'
+				});
 
-        .nav-con-wrap .nav-wrap .second .row{
-            margin-right: 0;
-            margin-left: auto;
-            text-align: right;
-            margin-bottom: 10px;
-        }
+				for (var i = 0; i < $secli.length; i++) {
+					$secli.eq(i).addClass("animate_trans");
+					$secli.eq(i).stop(true).delay(i*15).animate({
+						'opacity': '1',
+					},{
+						duration: 1,
+						easing:'easeOutQuart',
+						step: function(now,fx){
+							// console.log(now);
+							$(this).css({transform: 'translateY('+now+'px)'});
+						}
+					});
+				};
+			}else{
+				$(this).removeClass("close");
+				$navAll.stop().animate({
+					'opacity': 0,
+				},{
+					duration: 300,
+					easing:'easeOutQuad',
+					complete: function(){
+						$(this).css({
+							'pointerEvents': 'none',
+							'visibility': 'hidden'
+						})
+					}
+				});
 
+				for (var i = 0; i < $secli.length; i++) {
+					$secli.eq(i).removeClass("animate_trans");
+					$secli.eq(i).css({'transform':'translateY(10px)'});
+					$secli.eq(i).animate({
+						'opacity': '0',
+					},0);
+				};
 
-        @keyframes arrow {
-            0% {
-                -webkit-transform: translate(0,-3px);
-                -ms-transform: translate(0,-3px);
-                transform: translate(0,-3px);
-            }
-            100% {
-                -webkit-transform: translate(0,0);
-                -ms-transform: translate(0,0);
-                transform: translate(0,0);
-            }
-        }
-
-    </style>
-    <div class="nav-all" style="pointer-events: none; opacity: 0; visibility: hidden;">
-        <div class="inner-wrap">
-            <div class="nav-con-wrap">
-                <div class="wrap">
-                    <h1 class="logo">
-                        <a href="#"><img src="__STATIC__/home/images/bw-logo.png" width="100" height="100" alt=""></a>
-                    </h1>
-                    <div class="nav-wrap clearfix">
-                        <div class="global">
-                            <ul class="set">
-                                <li><a href="">首页</a></li>
-                                <li><a href="">公司简介</a></li>
-                                <li><a href="">产品</a></li>
-                            </ul>
-                            <ul class="sub">
-                                <li><a href="">所在地</a></li>
-                                <li><a href="">公司简介</a></li>
-                            </ul>
-                        </div>
-                        <div class="second">
-                            <div class="row">
-                                <ul class="set">
-                                    <li style="opacity: 0;"><a href="#"><span>雪屋猫砂盆</span></a></li>
-                                    <li><a href="#"><span>吸吸君膨润土猫砂</span></a></li>
-                                    <li><a href="#"><span>Dr.p猫砂伴侣8包装</span></a></li>
-                                    <li><a href="#"><span>黑洞膨润土猫砂</span></a></li>
-                                    <li><a href="#"><span>宠物喂药器</span></a></li>
-                                    <li><a href="#"><span>除毛按摩刷</span></a></li>
-                                    <li><a href="#"><span>雪屋猫砂盆</span></a></li>
-                                    <li><a href="#"><span>吸吸君膨润土猫砂</span></a></li>
-                                    <li><a href="#"><span>Dr.p猫砂伴侣8包装</span></a></li>
-                                    <li><a href="#"><span>黑洞膨润土猫砂</span></a></li>
-                                    <li><a href="#"><span>宠物喂药器</span></a></li>
-                                    <li><a href="#"><span>除毛按摩刷</span></a></li>
-                                    <li><a href="#"><span>除毛按摩刷</span></a></li>
-                                    <li><a href="#"><span>雪屋猫砂盆</span></a></li>
-                                    <li><a href="#"><span>吸吸君膨润土猫砂</span></a></li>
-                                    <li><a href="#"><span>Dr.p猫砂伴侣8包装</span></a></li>
-                                    <li><a href="#"><span>黑洞膨润土猫砂</span></a></li>
-                                    <li><a href="#"><span>宠物喂药器</span></a></li>
-                                    <li><a href="#"><span>除毛按摩刷</span></a></li>
-                                </ul>
-                            </div>
-                            <!-- <div class="row">
-                                <ul class="set">
-                                    <li><a href="#"><span>雪屋猫砂盆</span></a></li>
-                                    <li><a href="#"><span>吸吸君膨润土猫砂</span></a></li>
-                                    <li><a href="#"><span>Dr.p猫砂伴侣8包装</span></a></li>
-                                    <li><a href="#"><span>黑洞膨润土猫砂</span></a></li>
-                                    <li><a href="#"><span>宠物喂药器</span></a></li>
-                                    <li><a href="#"><span>除毛按摩刷</span></a></li>
-                                </ul>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="btn-menu">
-        <a href="javascript:;">
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
-        </a>
-    </div>
-</div>
-
-<style>
-    .fuller-container{
-        padding-top: 192px;
-    }
-    .banner{
-        position: relative;
-        height:auto;
-    }
-    .banner-wrap,.banner-wrap ul{
-        height: inherit;
-    }
-    .banner-wrap li.part{
-        position: absolute;
-        right:0;
-        top:0;
-        width:0;
-        z-index: 2;
-        height: inherit;
-        overflow: hidden;
-    }
-    .banner-wrap li.part1{
-        left:0;
-        width:100%;
-    }
-    .banner-wrap li img {
-        position: absolute;
-        right: 0;
-        height: auto;
-        transform: scale(1.03);
-        transform-origin: 0 50% 0;
-    }
-    .dot-nav{
-        position: absolute;
-        left:0;
-        top:0;
-        right:0;
-        z-index:6;
-        text-align: right;
-    }
-    .dot-wrap{
-        display: inline-block;
-        font-size: 0;
-        margin: 50px 60px 0 0;
-    }
-    .dot-wrap span{
-        display: inline-block;
-        width:6px;
-        height:6px;
-        border-radius: 50%;
-        background: transparent;
-        margin-left: 10px;
-        transition: background-color 240ms cubic-bezier(.165,.84,.44,1);
-        border: 2px solid #000;
-        cursor: pointer;
-    }
-    .dot-wrap span.active{
-        background: #000;
-    }
-</style>
-<div class="fuller-container">
-    <div class="banner">
-        <div class="dot-nav">
-            <div class="dot-wrap">
-                <span class="active"></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <div class="banner-wrap">
-            <ul>
-                <li class="part part1">
-                    <img src="__STATIC__/home/images/b1.jpg" data-width="1600" data-height="1025" alt="">
-                </li>
-                <li class="part part2">
-                    <img src="__STATIC__/home/images/b2.jpg" data-width="1600" data-height="1025" alt="">
-                </li>
-                <li class="part part3">
-                    <img src="__STATIC__/home/images/b3.jpg" data-width="1600" data-height="1025" alt="">
-                </li>
-            </ul>
-        </div>
-
-    </div>
-</div>
-
-<script src="__STATIC__/home/js/jquery.js"></script>
-<script type="text/javascript" src="__STATIC__/home/js/jquery-css-transform.js"></script>
-<script src="https://cdn.bootcss.com/jquery-easing/1.4.1/jquery.easing.js"></script>
-<script>
-
-    var $banner = $(".banner");
-    var $banner_wrap = $(".banner-wrap");
-    var $dot_wrap = $(".dot-wrap");
-    var prevIndex = 0;
-    var $blis = $banner_wrap.find("li");
-    var len = $blis.length;
-    var index = 0;
-    var setTime = 5000;
-    var timer = null;
-
-    function calcbannerWH($dom) {
-        var hh = $(window).height();
-        var ww = $(window).width();
-        var bh = hh - 192;
-        $dom.css({
-            width: ww,
-            height: bh
-        });
-        console.log(ww);
-        return {
-            w: ww,
-            h: bh
-        }
-    }
-
-    function sizeImg($lisDom,W,H){
-        var liArr = Array.prototype.slice.call($lisDom);
-        liArr.forEach(function(dom){
-            var dwidth = $(dom).find('img').data('width');
-            var dheight = $(dom).find('img').data('height');
-            var height = dheight/dwidth*W;
-            var top = (height - H) / 2;
-            var right = 0;
-            if(top<=0){
-                height = H;
-                var imgw = dwidth/dheight*height;
-                right = (imgw - W) / 4;
-                W = imgw;
-                top= 0;
-            }
-            $(dom).find("img").css({
-                "width": W,
-                "height": height,
-                "top": -top,
-                "right": -right+"px"
-            });
-        });
-    }
-
-
-    var whjson = calcbannerWH($banner);
-    sizeImg($blis,whjson.w,whjson.h);
-
-    $(window).resize(function(){
-        whjson = calcbannerWH($banner);
-        sizeImg($blis,whjson.w,whjson.h);
-        $blis.eq(prevIndex).width(whjson.w);
-    });
-
-
-    $dot_wrap.find("span").on('click',function(){
-        index = $(this).index();
-
-        if(index == prevIndex) return false;
-        auto(index);
-    });
-
-
-    $blis.eq(0).find('img').animate({
-        'transform-originX':'100%'
-    },setTime+5000);
-
-    function setIn(){
-        timer = setInterval(function(){
-            index++;
-            index = index>=len?0:index;
-            auto(index);
-        },setTime);
-    }
-
-    setIn();
-
-    $dot_wrap.find("span").hover(function(){
-        clearInterval(timer);
-    },function(){
-        setIn();
-    });
-
-    function auto(index){
-        $dot_wrap.find("span").eq(index).addClass("active").siblings().removeClass("active");
-        $blis.eq(index).css({
-            "zIndex": 3
-        }).animate({
-            "width": whjson.w
-        },{
-            duration: 1000,
-            easing:'easeInQuint',
-            complete: function(){
-                $blis.eq(prevIndex).find('img').stop(true).css({
-                    'transform-originX': '0%'
-                });
-                $blis.eq(prevIndex).css({
-                    'width': 0,
-                    'left': 'auto',
-                    'right': 0,
-                    'zIndex': 2
-                });
-                $(this).find('img').animate({
-                    'transform-originX': '100%'
-                },setTime+5000);
-                $(this).css('zIndex',2);
-                prevIndex = index;
-            }
-        });
-    }
-
-
-    var $navAll = $(".nav-all");
-    var $secli = $navAll.find('.second .set').children();
-    $(".btn-menu").on('click',function(){
-        if(!$(this).hasClass('close')){
-            $(this).addClass("close");
-            $navAll.css({
-                'pointerEvents': 'auto',
-                'visibility': 'visible'
-            }).stop().animate({
-                'opacity': 1
-            },{
-                duration: 400,
-                easing:'easeInQuad'
-            });
-
-            for (var i = 0; i < $secli.length; i++) {
-                $secli.eq(i).addClass("animate_trans");
-                $secli.eq(i).stop(true).delay(i*20).animate({
-                    'opacity': '1'
-                },10);
-            };
-        }else{
-            $(this).removeClass("close");
-            $navAll.stop().animate({
-                'opacity': 0
-            },{
-                duration: 300,
-                easing:'easeOutQuad',
-                complete: function(){
-                    $(this).css({
-                        'pointerEvents': 'none',
-                        'visibility': 'hidden'
-                    })
-                }
-            });
-
-            for (var i = 0; i < $secli.length; i++) {
-                $secli.eq(i).removeClass("animate_trans");
-                $secli.eq(i).css({
-                    'opacity': '0'
-                });
-            };
-
-        }
-    });
+			}
+		});
 
 
 
 
-</script>
+	</script>
 </body>
 </html>
