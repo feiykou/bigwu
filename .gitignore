@@ -3,7 +3,7 @@ composer.lock
 *.log
 LICENSE.txt
 runtime
-thinkphp
+#thinkphp
 vendor
 application/database.php
 composer.json
