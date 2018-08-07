@@ -12,12 +12,12 @@
 		<div class="inner-nav">
 			<div class="nav-wrap">
 				<div class="global">
-					<ul class="set">
+					<ul class="set setlists">
 						<li><a href="">首页</a></li>
 						<li><a href="">公司简介</a></li>
 						<li><a href="">产品</a></li>
 					</ul>
-					<ul class="sub">
+					<ul class="sub setlists">
 						<li><a href="">所在地</a></li>
 						<li><a href="">公司简介</a></li>
 					</ul>
@@ -196,6 +196,17 @@
         var $navAll = $(".nav-all");
         var $secli = $navAll.find('.second .set').children();
         var $globalli = $navAll.find('.global .set').children();
+        var $head_global = $(".inner-nav .nav-wrap").find('.setlists').children();
+
+        new FeiyLeft({
+            listDoms: $head_global,
+            speed: 25,
+            dur: 300,
+            transY: 5
+        }).fadeIn();
+
+
+
         $(".btn-menu").on('click',function(){
             if(!$(this).hasClass('close')){
                 $(this).addClass("close");
@@ -210,7 +221,15 @@
                 });
 
                 new FeiyLeft({
-                    listDoms: $secli
+                    listDoms: $head_global
+                }).fadeOut();
+
+
+                new FeiyLeft({
+                    listDoms: $secli,
+                    speed: 36,
+                    dur: 2,
+                    transY: 10
                 }).fadeIn();
 
                 new FeiyLeft({
