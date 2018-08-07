@@ -51,7 +51,7 @@
 							</div>
 							<div class="second">
 								<div class="row">
-									<ul class="set">
+									<ul class="set r-list">
 										<li style="opacity: 0;"><a href="#"><span>雪屋猫砂盆</span></a></li>
 										<li><a href="#"><span>吸吸君膨润土猫砂</span></a></li>
 										<li><a href="#"><span>Dr.p猫砂伴侣8包装</span></a></li>
@@ -143,10 +143,22 @@
 			animate_time: 10000
 	    });
 
-        var $ulset = $(".nav-wrap").find('.r-list.set');
-        $ulset.parent().css({
-            'width': $ulset.width()
-        });
+        calcNavW();
+
+		$(window).resize(function(){
+            calcNavW();
+		});
+		
+		function calcNavW() {
+
+            var $ulset = $(".nav-wrap").find('.r-list.set');
+            console.log($ulset);
+            $ulset.parent().css({
+                'width': $ulset.width()
+            });
+        }
+
+
 
 
 
@@ -169,13 +181,14 @@
                 for (var i = 0; i < $secli.length; i++) {
                     $secli.eq(i).addClass("animate_trans");
                     console.log(i*8+i);
-                    $secli.eq(i).stop(true).delay(i*(i+10)).animate({
+                    // i*(i-1)
+                    $secli.eq(i).stop(true).delay(18*i+6).animate({
                         'opacity': '1',
                     },{
-                        duration: 100,
-                        easing:'easeInQuart',
+                        duration: 20,
+                        easing:'easeOutExpo',
                         step: function(now,fx){
-                            $(this).css({transform: 'translateY('+(1-now)*10+'px)'});
+                            $(this).css({transform: 'translateY('+(1-now)*5+'px)'});
                         }
                     });
                 };
@@ -185,7 +198,7 @@
                     'opacity': 0,
                 },{
                     duration: 300,
-                    easing:'easeOutCubic',
+                    easing:'easeInQuint',
                     complete: function(){
                         $(this).css({
                             'pointerEvents': 'none',
@@ -198,7 +211,7 @@
                     $secli.eq(i).removeClass("animate_trans");
                     $secli.eq(i).css({'transform':'translateY(10px)'});
                     $secli.eq(i).animate({
-                        'opacity': '0',
+                        'opacity': '0'
                     },0);
                 };
 
