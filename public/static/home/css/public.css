@@ -246,6 +246,7 @@ img{
     font-size: 20px;
     line-height: 42px;
     font-weight: bold;
+    transform: translateY(5px);
 }
 .nav-wrap ul.set li a{
     pointer-events: auto;
@@ -349,7 +350,7 @@ img{
     text-align: left;
 }
 .nav-con-wrap .nav-wrap .second ul li{
-	transform: translateY(5px);
+
     -ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
@@ -364,15 +365,14 @@ img{
     -moz-transition: all 0.5s ease-in-out; /* Firefox 4 */
     -webkit-transition: all 0.5s ease-in-out; /* Safari 和 Chrome */
     -o-transition: all 0.5s ease-in-out; /* Opera */
-    /* transform:translateY(5px); */
 
 }
-.nav-con-wrap .nav-wrap .second ul li.animate_trans{
+.nav-con-wrap .nav-wrap ul li.animate_trans{
 
-    transition: all 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
-    -moz-transition: all 0.1s cubic-bezier(0.22, 0.61, 0.36, 1); /* Firefox 4 */
-    -webkit-transition: all 0.9s cubic-bezier(0.22, 0.61, 0.36, 1); /* Safari 和 Chrome */
-    -o-transition: all 0.1s cubic-bezier(0.22, 0.61, 0.36, 1); /* Opera */
+    /*transition: all 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);*/
+    /*-moz-transition: all 0.1s cubic-bezier(0.22, 0.61, 0.36, 1); !* Firefox 4 *!*/
+    /*-webkit-transition: all 0.9s cubic-bezier(0.22, 0.61, 0.36, 1); !* Safari 和 Chrome *!*/
+    /*-o-transition: all 0.1s cubic-bezier(0.22, 0.61, 0.36, 1); !* Opera *!*/
 }
 .nav-con-wrap .nav-wrap .second ul a{
     position: relative;

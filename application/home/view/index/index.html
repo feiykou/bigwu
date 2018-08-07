@@ -56,21 +56,15 @@
 										<li><a href="#"><span>吸吸君膨润土猫砂</span></a></li>
 										<li><a href="#"><span>Dr.p猫砂伴侣8包装</span></a></li>
 										<li><a href="#"><span>黑洞膨润土猫砂</span></a></li>
-										<li><a href="#"><span>宠物喂药器</span></a></li>
-										<li><a href="#"><span>除毛按摩刷</span></a></li>
-										<li><a href="#"><span>雪屋猫砂盆</span></a></li>
 										<li><a href="#"><span>吸吸君膨润土猫砂</span></a></li>
 										<li><a href="#"><span>Dr.p猫砂伴侣8包装</span></a></li>
 										<li><a href="#"><span>黑洞膨润土猫砂</span></a></li>
-										<li><a href="#"><span>宠物喂药器</span></a></li>
-										<li><a href="#"><span>除毛按摩刷</span></a></li>
-										<li><a href="#"><span>除毛按摩刷</span></a></li>
-										<li><a href="#"><span>雪屋猫砂盆</span></a></li>
 										<li><a href="#"><span>吸吸君膨润土猫砂</span></a></li>
 										<li><a href="#"><span>Dr.p猫砂伴侣8包装</span></a></li>
 										<li><a href="#"><span>黑洞膨润土猫砂</span></a></li>
-										<li><a href="#"><span>宠物喂药器</span></a></li>
-										<li><a href="#"><span>除毛按摩刷</span></a></li>
+										<li><a href="#"><span>吸吸君膨润土猫砂</span></a></li>
+										<li><a href="#"><span>Dr.p猫砂伴侣8包装</span></a></li>
+										<li><a href="#"><span>黑洞膨润土猫砂</span></a></li>
 									</ul>
 								</div>
 								<!-- <div class="row">
@@ -152,12 +146,48 @@
 		function calcNavW() {
 
             var $ulset = $(".nav-wrap").find('.r-list.set');
-            console.log($ulset);
             $ulset.parent().css({
                 'width': $ulset.width()
             });
         }
 
+        var FeiyLeft = function(opts){
+			this.listDoms = opts.listDoms;
+			this.dur = opts.dur || 40;
+			this.transY = opts.transY || 5;
+			this.speed = opts.speed || 26;
+		};
+
+        FeiyLeft.prototype = {
+            fadeIn: function(){
+				var $listDoms = this.listDoms;
+				var that = this;
+                var len = $listDoms.length;
+                for (var i = 0; i < len; i++) {
+                    $listDoms.eq(i).addClass("animate_trans");
+                    var express = that.speed/len*(i+1)*16+6;
+                    $listDoms.eq(i).stop(true).delay(express).animate({
+                        'opacity': 1
+                    },{
+                        duration: that.dur,
+                        step: function(now,fx){
+                            $(this).css({transform: 'translateY('+(1-now)*that.transY+'px)'});
+                        }
+                    });
+                };
+            },
+            fadeOut: function(){
+                var $listDoms = this.listDoms;
+                var len = $listDoms.length;
+                for (var i = 0; i < len; i++) {
+                    $listDoms.eq(i).removeClass("animate_trans");
+                    $listDoms.eq(i).css({'transform':'translateY(5px)'});
+                    $listDoms.eq(i).stop(true,true).animate({
+                        'opacity': '0'
+                    },0);
+                };
+            }
+		};
 
 
 
@@ -165,6 +195,7 @@
 
         var $navAll = $(".nav-all");
         var $secli = $navAll.find('.second .set').children();
+        var $globalli = $navAll.find('.global .set').children();
         $(".btn-menu").on('click',function(){
             if(!$(this).hasClass('close')){
                 $(this).addClass("close");
@@ -174,27 +205,24 @@
                 }).stop(true,true).animate({
                     'opacity': 1
                 },{
-                    duration: 100,
-                    easing:'swing'
+                    duration: 300,
+                    easing:'easeInOutSine'
                 });
 
-                for (var i = 0; i < $secli.length; i++) {
-                    $secli.eq(i).addClass("animate_trans");
-                    console.log(i*8+i);
-                    // i*(i-1)
-                    $secli.eq(i).stop(true).delay(18*i+6).animate({
-                        'opacity': '1',
-                    },{
-                        duration: 20,
-                        easing:'easeOutExpo',
-                        step: function(now,fx){
-                            $(this).css({transform: 'translateY('+(1-now)*5+'px)'});
-                        }
-                    });
-                };
+                new FeiyLeft({
+                    listDoms: $secli
+                }).fadeIn();
+
+                new FeiyLeft({
+                    listDoms: $globalli,
+                    speed: 12,
+                    dur: 260,
+                    transY: 5
+                }).fadeIn();
+
             }else{
                 $(this).removeClass("close");
-                $navAll.stop().animate({
+                $navAll.stop(true,true).animate({
                     'opacity': 0,
                 },{
                     duration: 300,
@@ -207,13 +235,15 @@
                     }
                 });
 
-                for (var i = 0; i < $secli.length; i++) {
-                    $secli.eq(i).removeClass("animate_trans");
-                    $secli.eq(i).css({'transform':'translateY(5px)'});
-                    $secli.eq(i).animate({
-                        'opacity': '0'
-                    },0);
-                };
+                new FeiyLeft({
+                    listDoms: $secli
+                }).fadeOut();
+
+                new FeiyLeft({
+                    listDoms: $globalli
+                }).fadeOut();
+
+
 
             }
         });
