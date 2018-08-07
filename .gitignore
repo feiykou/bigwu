@@ -1,9 +1,7 @@
 .idea
 composer.lock
 *.log
-LICENSE.txt
+thinkphp
 runtime
-#thinkphp
-vendor
 application/database.php
 composer.json

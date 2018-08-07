@@ -1,0 +1,54 @@
+.bw-banner{
+    position: relative;
+    height:auto;
+}
+.banner-wrap,.banner-wrap ul{
+    height: inherit;
+}
+.banner-wrap li.part{
+    position: absolute;
+    right:0;
+    top:0;
+    width:0;
+    z-index: 2;
+    height: inherit;
+    overflow: hidden;
+}
+.banner-wrap li.part1{
+    left:0;
+    width:100%;
+}
+.banner-wrap li img {
+    position: absolute;
+    right: 0;
+    height: auto;
+    transform: scale(1.03);
+    transform-origin: 0 50% 0;
+}
+.dot-nav{
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    z-index:6;
+    text-align: right;
+}
+.dot-wrap{
+    display: inline-block;
+    font-size: 0;
+    margin: 50px 60px 0 0;
+}
+.dot-wrap span{
+    display: inline-block;
+    width:6px;
+    height:6px;
+    border-radius: 50%;
+    background: transparent;
+    margin-left: 10px;
+    transition: background-color 240ms cubic-bezier(.165,.84,.44,1);
+    border: 2px solid #000;
+    cursor: pointer;
+}
+.dot-wrap span.active{
+    background: #000;
+}
