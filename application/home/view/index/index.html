@@ -144,7 +144,6 @@
 		});
 		
 		function calcNavW() {
-
             var $ulset = $(".nav-wrap").find('.r-list.set');
             $ulset.parent().css({
                 'width': $ulset.width()
@@ -154,7 +153,7 @@
         var FeiyLeft = function(opts){
 			this.listDoms = opts.listDoms;
 			this.dur = opts.dur || 40;
-			this.transY = opts.transY || 5;
+			this.trans = opts.trans;
 			this.speed = opts.speed || 26;
 		};
 
@@ -165,23 +164,26 @@
                 var len = $listDoms.length;
                 for (var i = 0; i < len; i++) {
                     $listDoms.eq(i).addClass("animate_trans");
-                    var express = that.speed/len*(i+1)*16+6;
+                    var express = that.speed/len*(i+1)*10+6;
                     $listDoms.eq(i).stop(true).delay(express).animate({
                         'opacity': 1
                     },{
                         duration: that.dur,
                         step: function(now,fx){
-                            $(this).css({transform: 'translateY('+(1-now)*that.transY+'px)'});
+                            $listDoms.eq(i).css({transform: 'translateY('+(1-now)*that.trans+'px)'});
                         }
                     });
                 };
             },
             fadeOut: function(){
                 var $listDoms = this.listDoms;
+                var that = this;
                 var len = $listDoms.length;
+                console.log($listDoms);
+                console.log(that.transY);
                 for (var i = 0; i < len; i++) {
                     $listDoms.eq(i).removeClass("animate_trans");
-                    $listDoms.eq(i).css({'transform':'translateY(5px)'});
+                    $listDoms.eq(i).css({'transform':'translateY('+that.trans+'px)'});
                     $listDoms.eq(i).stop(true,true).animate({
                         'opacity': '0'
                     },0);
@@ -198,12 +200,14 @@
         var $globalli = $navAll.find('.global .set').children();
         var $head_global = $(".inner-nav .nav-wrap").find('.setlists').children();
 
-        new FeiyLeft({
+        var head_global = new FeiyLeft({
             listDoms: $head_global,
             speed: 25,
             dur: 300,
-            transY: 5
-        }).fadeIn();
+            trans: 5
+        });
+
+        head_global.fadeIn();
 
 
 
@@ -220,23 +224,20 @@
                     easing:'easeInOutSine'
                 });
 
-                new FeiyLeft({
-                    listDoms: $head_global
-                }).fadeOut();
-
+                head_global.fadeOut();
 
                 new FeiyLeft({
                     listDoms: $secli,
-                    speed: 36,
-                    dur: 2,
-                    transY: 8
+                    speed: 30,
+                    dur:2,
+                    trans: 25
                 }).fadeIn();
 
                 new FeiyLeft({
                     listDoms: $globalli,
                     speed: 12,
                     dur: 260,
-                    transY: 5
+                    trans: 5
                 }).fadeIn();
 
             }else{

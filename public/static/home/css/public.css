@@ -372,10 +372,10 @@ img{
 }
 .nav-con-wrap .nav-wrap ul li.animate_trans{
 
-    /*transition: all 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);*/
-    /*-moz-transition: all 0.1s cubic-bezier(0.22, 0.61, 0.36, 1); !* Firefox 4 *!*/
-    /*-webkit-transition: all 0.9s cubic-bezier(0.22, 0.61, 0.36, 1); !* Safari 和 Chrome *!*/
-    /*-o-transition: all 0.1s cubic-bezier(0.22, 0.61, 0.36, 1); !* Opera *!*/
+    transition: all 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+    -moz-transition: all 0.1s cubic-bezier(0.22, 0.61, 0.36, 1); /* Firefox 4 */
+    -webkit-transition: all 0.9s cubic-bezier(0.22, 0.61, 0.36, 1); /* Safari 和 Chrome */
+    -o-transition: all 0.1s cubic-bezier(0.22, 0.61, 0.36, 1); /* Opera */
 }
 .nav-con-wrap .nav-wrap .second ul a{
     position: relative;
