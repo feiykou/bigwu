@@ -9,7 +9,7 @@
 </head>
 <body scroll="no">
 	<div class="haeder">
-		<div class="inner-nav">
+		<div class="inner-nav head-nav-bar">
 			<div class="nav-wrap">
 				<div class="global">
 					<ul class="set setlists">
@@ -31,7 +31,7 @@
 		</div>
 
 		<div class="nav-all" style="pointer-events: none; opacity: 0; visibility: hidden;">
-			<div class="inner-wrap">
+			<div class="inner-wrap menu-inner-wrap">
 				<div class="nav-con-wrap">
 					<div class="wrap">
 						<h1 class="logo">
@@ -39,7 +39,7 @@
 						</h1>
 						<div class="nav-wrap clearfix">
 							<div class="global">
-								<ul class="set">
+								<ul class="set clearfix">
 									<li><a href="">首页</a></li>
 									<li><a href="">公司简介</a></li>
 									<li><a href="">产品</a></li>
@@ -51,8 +51,8 @@
 							</div>
 							<div class="second">
 								<div class="row">
-									<ul class="set r-list">
-										<li style="opacity: 0;"><a href="#"><span>雪屋猫砂盆</span></a></li>
+									<ul class="set r-list clearfix">
+										<li><a href="#"><span>雪屋猫砂盆</span></a></li>
 										<li><a href="#"><span>吸吸君膨润土猫砂</span></a></li>
 										<li><a href="#"><span>Dr.p猫砂伴侣8包装</span></a></li>
 										<li><a href="#"><span>黑洞膨润土猫砂</span></a></li>
@@ -67,16 +67,6 @@
 										<li><a href="#"><span>黑洞膨润土猫砂</span></a></li>
 									</ul>
 								</div>
-								<!-- <div class="row">
-									<ul class="set">
-										<li><a href="#"><span>雪屋猫砂盆</span></a></li>
-										<li><a href="#"><span>吸吸君膨润土猫砂</span></a></li>
-										<li><a href="#"><span>Dr.p猫砂伴侣8包装</span></a></li>
-										<li><a href="#"><span>黑洞膨润土猫砂</span></a></li>
-										<li><a href="#"><span>宠物喂药器</span></a></li>
-										<li><a href="#"><span>除毛按摩刷</span></a></li>
-									</ul>
-								</div> -->
 							</div>
 						</div>
 					</div>
@@ -130,32 +120,89 @@
 	<script src="https://cdn.bootcss.com/jquery-easing/1.4.1/jquery.easing.js"></script>
 	<script type="text/javascript" src="__STATIC__/home/js/banner.js"></script>
 	<script>
-		bannerJson.entry({
-	        animate: 'originX',
-			switch_time: 1000,
-			setTime: 5000,
-			animate_time: 10000
-	    });
-
-        calcNavW();
-
-		$(window).resize(function(){
+        $(function(){
+            bannerJson.entry({
+                animate: 'originX',
+                switch_time: 1000,
+                setTime: 5000,
+                animate_time: 10000
+            });
             calcNavW();
-		});
-		
-		function calcNavW() {
+        });
+
+
+
+
+        $(window).resize(function(){
+            calcNavW();
+        });
+
+        function calcNavW() {
+            var maxW = $(".menu-inner-wrap").width();
             var $ulset = $(".nav-wrap").find('.r-list.set');
+            console.log(maxW);
+            var width = maxW <= $ulset.width() ? 'auto' : $ulset.width();
             $ulset.parent().css({
-                'width': $ulset.width()
+                'width': width
             });
         }
 
+        var $navAll = $(".nav-all");
+        var $secli = $navAll.find('.second .set').children();
+        var $globalli = $navAll.find('.global>ul').children();
+        var $head_global = $(".inner-nav .nav-wrap").find('.setlists').children();
+
+        var page_init = {
+            init: function(){
+                this.setliHg($secli);
+                this.setliHg($globalli);
+            },
+
+            setliHg: function($listDoms){
+                var listArr = Array.prototype.slice.call($listDoms);
+                var maxH = this.getMaxHeight(listArr);
+                listArr.forEach(function(dom){
+                    $(dom).height(maxH);
+                });
+
+            },
+
+            getMaxHeight: function(listArr){
+                var heightArr = [];
+                listArr.forEach(function (dom) {
+                    heightArr.push($(dom).height());
+                });
+                return Math.max.apply(null,heightArr);
+            }
+        };
+
+        page_init.init();
+
+
+
+        function setMaxHeight($listDoms) {
+            var listArr = Array.prototype.slice.call($listDoms);
+            var heightArr = [];
+            listArr.forEach(function (dom) {
+                heightArr.push($(dom).height());
+            });
+            return Math.max.apply(null,heightArr);
+        }
+
+
+
+
+
+
+        // 导航动画
         var FeiyLeft = function(opts){
 			this.listDoms = opts.listDoms;
 			this.dur = opts.dur || 40;
 			this.trans = opts.trans;
 			this.speed = opts.speed || 26;
+			this.easing = opts.easing || 'easeOutQuad';
 		};
+
 
         FeiyLeft.prototype = {
             fadeIn: function(){
@@ -163,24 +210,26 @@
 				var that = this;
                 var len = $listDoms.length;
                 for (var i = 0; i < len; i++) {
-                    $listDoms.eq(i).addClass("animate_trans");
-                    var express = that.speed/len*(i+1)*10+6;
-                    $listDoms.eq(i).stop(true).delay(express).animate({
-                        'opacity': 1
-                    },{
-                        duration: that.dur,
-                        step: function(now,fx){
-                            $listDoms.eq(i).css({transform: 'translateY('+(1-now)*that.trans+'px)'});
-                        }
-                    });
+                    (function(i){
+                        var $listDom = $listDoms.eq(i);
+                        $listDom.addClass("animate_trans");
+                        var express = that.speed/len*(i+1)*10+6;
+                        $listDom.stop(true).delay(express).animate({
+                            'opacity': 1
+                        },{
+                            easing: that.easing,
+                            duration: that.dur,
+                            step: function(now,fx){
+                                $listDom.css({transform: 'translateY('+(1-now)*that.trans+'px)'});
+                            }
+                        });
+                    })(i);
                 };
             },
             fadeOut: function(){
                 var $listDoms = this.listDoms;
                 var that = this;
                 var len = $listDoms.length;
-                console.log($listDoms);
-                console.log(that.transY);
                 for (var i = 0; i < len; i++) {
                     $listDoms.eq(i).removeClass("animate_trans");
                     $listDoms.eq(i).css({'transform':'translateY('+that.trans+'px)'});
@@ -195,20 +244,30 @@
 
 
 
-        var $navAll = $(".nav-all");
-        var $secli = $navAll.find('.second .set').children();
-        var $globalli = $navAll.find('.global .set').children();
-        var $head_global = $(".inner-nav .nav-wrap").find('.setlists').children();
 
+        console.log(setMaxHeight($secli));
         var head_global = new FeiyLeft({
             listDoms: $head_global,
-            speed: 25,
-            dur: 300,
-            trans: 5
+            speed: 26,
+            dur: 260,
+            trans: 10
+        });
+        var secli = new FeiyLeft({
+            listDoms: $secli,
+            speed: 38,
+            dur:10,
+            trans: 15
+        });
+        var globalli = new FeiyLeft({
+            listDoms: $globalli,
+            speed: 26,
+            dur: 160,
+            trans: 15
         });
 
-        head_global.fadeIn();
-
+        setTimeout(function(){
+            head_global.fadeIn();
+        },1000);
 
 
         $(".btn-menu").on('click',function(){
@@ -220,25 +279,13 @@
                 }).stop(true,true).animate({
                     'opacity': 1
                 },{
-                    duration: 300,
+                    duration: 200,
                     easing:'easeInOutSine'
                 });
 
                 head_global.fadeOut();
-
-                new FeiyLeft({
-                    listDoms: $secli,
-                    speed: 30,
-                    dur:2,
-                    trans: 25
-                }).fadeIn();
-
-                new FeiyLeft({
-                    listDoms: $globalli,
-                    speed: 12,
-                    dur: 260,
-                    trans: 5
-                }).fadeIn();
+                secli.fadeIn();
+                globalli.fadeIn();
 
             }else{
                 $(this).removeClass("close");
@@ -254,17 +301,9 @@
                         })
                     }
                 });
-
-                new FeiyLeft({
-                    listDoms: $secli
-                }).fadeOut();
-
-                new FeiyLeft({
-                    listDoms: $globalli
-                }).fadeOut();
-
-
-
+                secli.fadeOut();
+                globalli.fadeOut();
+                head_global.fadeIn();
             }
         });
 
