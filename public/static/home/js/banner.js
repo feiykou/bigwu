@@ -38,17 +38,12 @@ var bannerJson = {
             var height = dheight/dwidth*ww;
             var top = (height - H) / 2;
             var right = 0;
-            // console.log(`top=${top}`);
             if(top<=0){
                 height = H;
                 var imgw = dwidth/dheight*height;
                 right = (imgw - ww) / 2;
-                console.log(`W=${ww}`);
                 ww = imgw;
                 top= 0;
-
-                // console.log(`imgw=${imgw}`);
-                console.log(`right=${right}`);
             }
             $(dom).find("img").css({
                 "width": ww,
