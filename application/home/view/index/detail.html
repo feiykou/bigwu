@@ -253,55 +253,10 @@
 <!-- <script type="text/javascript" src="__STATIC__/home/js/jquery-css-transform.js"></script> -->
 <script src="https://cdn.bootcss.com/jquery-easing/1.4.1/jquery.easing.js"></script>
 <script type="text/javascript" src="__STATIC__/home/js/banner.js"></script>
+<script type="text/javascript" src="__STATIC__/home/js/common.js"></script>
 <script type="text/javascript">
     bannerJson.entry({
         animate: 'scale'
-    });
-
-    var $navAll = $(".nav-all");
-    var $secli = $navAll.find('.second .set').children();
-    $(".btn-menu").on('click',function(){
-        if(!$(this).hasClass('close')){
-            $(this).addClass("close");
-            $navAll.css({
-                'pointerEvents': 'auto',
-                'visibility': 'visible'
-            }).stop().animate({
-                'opacity': 1
-            },{
-                duration: 400,
-                easing:'easeInQuad'
-            });
-
-            for (var i = 0; i < $secli.length; i++) {
-                $secli.eq(i).addClass("animate_trans");
-                $secli.eq(i).stop(true).delay(i*20).animate({
-                    'opacity': '1'
-                },10);
-            };
-        }else{
-            $(this).removeClass("close");
-            $navAll.stop().animate({
-                'opacity': 0
-            },{
-                duration: 300,
-                easing:'easeOutQuad',
-                complete: function(){
-                    $(this).css({
-                        'pointerEvents': 'none',
-                        'visibility': 'hidden'
-                    })
-                }
-            });
-
-            for (var i = 0; i < $secli.length; i++) {
-                $secli.eq(i).removeClass("animate_trans");
-                $secli.eq(i).css({
-                    'opacity': '0'
-                });
-            };
-
-        }
     });
 </script>
 </body>
