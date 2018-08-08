@@ -371,7 +371,7 @@ img{
     text-align: left;
 }
 .nav-con-wrap .nav-wrap .second ul li{
-    float: right;
+    /*float: right;*/
     margin-bottom: 15px;
     -ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
