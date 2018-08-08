@@ -1,6 +1,7 @@
 $(window).resize(function(){
     calcNavW();
 });
+calcNavW();
 
 function calcNavW() {
     var maxW = $(".menu-inner-wrap").width();
