@@ -12,8 +12,7 @@
 .content .inner-box{
    max-width: 1760px;
    min-width: 1140px;
-
-   margin: 120px auto 0;
+   margin: 80px auto 0;
    box-sizing: border-box;
 }
 
@@ -52,9 +51,7 @@
    line-height: 18px;
    font-size: 12px;
 }
-.description{
-   margin-top: 50px;
-}
+
 .information{
    margin-bottom: 50px;
 }
@@ -159,8 +156,8 @@
   .detail-main-con{
       margin-bottom: 80px;
   }
-  .inner-box{
-      padding: 0 16px;
+  .content .inner-box{
+      padding: 0 30px;
   }
   .btn-menu{
       left: 6px;
