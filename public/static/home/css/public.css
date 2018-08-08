@@ -444,6 +444,15 @@ img{
     text-align: right;
     margin-bottom: 10px;
 }
+.nav-con-wrap .nav-wrap .second .row .r-list{
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    -webkit-font-feature-settings: 'vpal';
+    -ms-font-feature-settings: 'vpal';
+    -o-font-feature-settings: 'vpal';
+    font-feature-settings: 'vpal';
+}
 
 
 @keyframes arrow {
