@@ -306,7 +306,7 @@ img{
     bottom: 0;
     background-color: #F7F8F7;
     z-index: 10;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     overflow-y: auto;
     box-sizing: border-box;
     padding-bottom: 20px
@@ -364,17 +364,17 @@ img{
 	width: 246px;
 }
 .nav-con-wrap .nav-wrap .second ul{
-
+    word-break:break-all;
     text-align: left;
 }
 .nav-con-wrap .nav-wrap .second ul li{
-    /*float: right;*/
+    float: right;
+    white-space: nowrap;
     margin-bottom: 15px;
     font-size: 14px;
     line-height: 42px;
     opacity: 0;
     transform: translateY(10px);
-
     -ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;

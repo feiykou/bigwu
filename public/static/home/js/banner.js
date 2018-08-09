@@ -9,8 +9,8 @@ var bannerJson = {
     default: {
         setTime: 5000,
         animate: 'originX',
-        animate_time: 10000,
-        switch_time: 600
+        animate_time: 8000,
+        switch_time: 800
     },
     entry: function(obj){
         var opts = $.extend({},this.default,obj);
