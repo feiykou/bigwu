@@ -20,12 +20,13 @@ function calcNavW() {
 var $navAll = $(".nav-all");
 var $secli = $navAll.find('.second .set').children();
 var $globalli = $navAll.find('.global>ul').children();
-var $head_global = $(".inner-nav .nav-wrap").find('.setlists').children();
+var $head_global = $(".head-nav-bar .nav-wrap").find('.setlists').children();
 
 var page_init = {
     init: function(){
         this.setliHg($secli);
         this.setliHg($globalli);
+        this.setliHg($head_global);
     },
 
     setliHg: function($listDoms){
@@ -118,21 +119,21 @@ FeiyLeft.prototype = {
 console.log(setMaxHeight($secli));
 var head_global = new FeiyLeft({
     listDoms: $head_global,
-    speed: 26,
+    speed: 32,
     dur: 260,
     trans: 10
 });
 var secli = new FeiyLeft({
     listDoms: $secli,
-    speed: 38,
-    dur:10,
-    trans: 15
+    speed: 50,
+    dur:300,
+    trans: 10
 });
 var globalli = new FeiyLeft({
     listDoms: $globalli,
-    speed: 26,
-    dur: 160,
-    trans: 15
+    speed: 32,
+    dur: 260,
+    trans: 10
 });
 
 setTimeout(function(){
