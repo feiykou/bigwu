@@ -4,6 +4,7 @@ var bannerJson = {
     prevIndex: 0,
     index: 0,
     timer: null,
+    curTime: 1,
     whjson: {},
     len: 0,
     default: {
@@ -17,6 +18,7 @@ var bannerJson = {
         this.init(opts);
     },
     init: function(opts){
+        that.curTime = new Data();
         var $banner = $(".bw-banner");
         var $blis = $banner.find("li");
         var $dot_wrap = $banner.find(".dot-wrap");
@@ -27,7 +29,6 @@ var bannerJson = {
         this.initRun(opts,$blis,$dot_wrap);
         this.eventFn().dotClick(opts,$blis,$dot_wrap);
         this.eventFn().stopDot(opts,$blis,$dot_wrap);
-
         this.mobileEvent(opts,$banner,$blis,$dot_wrap);
     },
     sizeImg: function($lisDom,W,H){
@@ -144,9 +145,21 @@ var bannerJson = {
             }
         }
     },
+    timePrevent: function(time){
+        if((new Date() - time)< 500){
+            return false;
+        };
+        return new Date();
+    },
     mobileEvent: function(opts,$banner,$blis,$dot_wrap){
         var that = this;
+
         $banner[0].ontouchstart = function(e){
+            var resultTime = that.timePrevent(that.curTime);
+            if(!resultTime){
+                return false;
+            }
+            that.curTime = resultTime;
             clearInterval(that.timer);
             var sX = e.changedTouches[0].pageX;
             this.ontouchmove = function(e){
