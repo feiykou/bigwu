@@ -468,5 +468,8 @@ img{
 }
 
 @media screen and (max-width: 980px) {
+    .head-nav-bar{ display: none;}
     .inner-wrap{ padding: 0 30px; }
+    .nav-wrap ul.set li{ margin-bottom: 30px;}
+    .nav-con-wrap .wrap{ margin-top: 80px;}
 }
