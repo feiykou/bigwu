@@ -474,8 +474,9 @@ img{
 @media screen and (max-width: 980px) {
     .fuller-container{ padding-top: 100px;}
     /*导航*/
-    .head-nav-bar{ display: none;}
+    /*.head-nav-bar{ display: none;}*/
     .inner-wrap{ padding: 0 30px; }
+    .inner-nav .nav-wrap{ top: 35px; right: 30px;}
     .nav-wrap ul.set li{ margin-bottom: 30px;}
     .nav-con-wrap .wrap{ margin-top: 80px;}
     /*菜单按钮*/
