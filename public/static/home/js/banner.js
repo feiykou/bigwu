@@ -32,7 +32,6 @@ var bannerJson = {
         this.mobileEvent(opts,$banner,$blis,$dot_wrap);
     },
     sizeImg: function($lisDom,W,H){
-        // console.log(`W=${W}`);
         var liArr = Array.prototype.slice.call($lisDom);
         liArr.forEach(function(dom){
             var ww = W;
@@ -65,7 +64,6 @@ var bannerJson = {
         var hh = $(window).height();
         var ww = $(window).width();
         var top = $dom.parent().css('paddingTop').replace('px','');
-        console.log(top);
         var bh = hh - top;
         $dom.css({
             width: ww,
@@ -173,12 +171,9 @@ var bannerJson = {
 
         $banner[0].ontouchstart = function(e){
             var resultTime = that.timePrevent(that.curTime);
-            console.log(resultTime);
             if(!resultTime){
-                console.log(resultTime);
                 return false;
             }
-            console.log(that.index);
             that.curTime = resultTime;
             clearInterval(that.timer);
             var sX = e.changedTouches[0].pageX;
