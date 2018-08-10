@@ -27,6 +27,8 @@ var bannerJson = {
         this.initRun(opts,$blis,$dot_wrap);
         this.eventFn().dotClick(opts,$blis,$dot_wrap);
         this.eventFn().stopDot(opts,$blis,$dot_wrap);
+
+        this.mobileEvent(opts,$banner,$blis,$dot_wrap);
     },
     sizeImg: function($lisDom,W,H){
         // console.log(`W=${W}`);
@@ -68,6 +70,10 @@ var bannerJson = {
             h: bh
         }
     },
+    critiIndex: function() {
+        if (this.index >= this.len) this.index = 0;
+        if (this.index < 0) this.index = this.len - 1;
+    },
     onresize: function($banner,$blis){
         var that = this;
         $(window).resize(function(){
@@ -78,6 +84,7 @@ var bannerJson = {
     },
     auto: function(opts,$blis,$dot_wrap){
         var that = this;
+        that.critiIndex();
         $dot_wrap.find("span").eq(that.index).addClass("active").siblings().removeClass("active");
         $blis.eq(that.index).css({
             "zIndex": 3
@@ -136,6 +143,31 @@ var bannerJson = {
                 scale: "1.1"
             }
         }
+    },
+    mobileEvent: function(opts,$banner,$blis,$dot_wrap){
+        var that = this;
+        $banner[0].ontouchstart = function(e){
+            clearInterval(that.timer);
+            var sX = e.changedTouches[0].pageX;
+            this.ontouchmove = function(e){
+                var nX = e.changedTouches[0].pageX;
+            };
+
+            this.ontouchend = function(e){
+                this.ontouchmove = null;
+                this.ontouchend = null;
+                var eX = e.changedTouches[0].pageX;
+                if(eX-sX > 30){
+                    that.index --;
+                }else if(eX - sX < -30){
+                    that.index ++;
+                }
+                that.auto(opts,$blis,$dot_wrap);
+                that.setIn(opts,$blis,$dot_wrap);
+            };
+        };
+
+
     },
     initRun: function(opts,$blis,$dot_wrap){
         var that = this;
