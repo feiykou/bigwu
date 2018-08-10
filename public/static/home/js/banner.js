@@ -48,6 +48,11 @@ var bannerJson = {
                 ww = imgw;
                 top= 0;
             }
+            $(dom).find("span").css({
+                "width": W,
+                "height": H,
+                "right":0
+            });
             $(dom).find("img").css({
                 "width": ww,
                 "height": height,
@@ -83,12 +88,24 @@ var bannerJson = {
             $blis.eq(that.prevIndex).width(that.whjson.w);
         });
     },
-    auto: function(opts,$blis,$dot_wrap){
+    auto: function(opts,$blis,$dot_wrap,$direc){
         var that = this;
+        var dirJson = {
+            'right': [0,'auto'],
+            'left': ['auto',0]
+        };
+        var $direc = $direc || 'left';
+
         that.critiIndex();
         $dot_wrap.find("span").eq(that.index).addClass("active").siblings().removeClass("active");
+        $blis.eq(that.index).find("span").css({
+            'left': dirJson[$direc][0],
+            'right': dirJson[$direc][1]
+        });
         $blis.eq(that.index).css({
-            "zIndex": 3
+            "zIndex": 3,
+            'left': dirJson[$direc][0],
+            'right': dirJson[$direc][1]
         }).animate({
             "width": that.whjson.w
         },{
@@ -146,7 +163,7 @@ var bannerJson = {
         }
     },
     timePrevent: function(time){
-        if((new Date() - time)< 500){
+        if((new Date() - time)< 1000){
             return false;
         };
         return new Date();
@@ -156,9 +173,12 @@ var bannerJson = {
 
         $banner[0].ontouchstart = function(e){
             var resultTime = that.timePrevent(that.curTime);
+            console.log(resultTime);
             if(!resultTime){
+                console.log(resultTime);
                 return false;
             }
+            console.log(that.index);
             that.curTime = resultTime;
             clearInterval(that.timer);
             var sX = e.changedTouches[0].pageX;
@@ -170,12 +190,15 @@ var bannerJson = {
                 this.ontouchmove = null;
                 this.ontouchend = null;
                 var eX = e.changedTouches[0].pageX;
+                var $direc = false;
                 if(eX-sX > 30){
                     that.index --;
+                    $direc = 'right';
                 }else if(eX - sX < -30){
                     that.index ++;
+                    $direc = 'left';
                 }
-                that.auto(opts,$blis,$dot_wrap);
+                that.auto(opts,$blis,$dot_wrap,$direc);
                 that.setIn(opts,$blis,$dot_wrap);
             };
         };

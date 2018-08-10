@@ -18,6 +18,10 @@
     left:0;
     width:100%;
 }
+.banner-wrap li.part span{
+    position: absolute;
+
+}
 .banner-wrap li img {
     position: absolute;
     right: 0;
