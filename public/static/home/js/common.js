@@ -10,7 +10,6 @@ $(function(){
 function calcNavW() {
     var maxW = $(".menu-inner-wrap").width();
     var $ulset = $(".nav-wrap").find('.r-list.set');
-    console.log(maxW);
     var width = maxW <= $ulset.width() ? 'auto' : $ulset.width();
     $ulset.parent().css({
         'width': width
@@ -116,7 +115,6 @@ FeiyLeft.prototype = {
 
 
 
-console.log(setMaxHeight($secli));
 var head_global = new FeiyLeft({
     listDoms: $head_global,
     speed: 32,

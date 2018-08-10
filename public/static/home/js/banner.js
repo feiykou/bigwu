@@ -56,7 +56,9 @@ var bannerJson = {
     calcbannerWH: function($dom){
         var hh = $(window).height();
         var ww = $(window).width();
-        var bh = hh - 192;
+        var top = $dom.parent().css('paddingTop').replace('px','');
+        console.log(top);
+        var bh = hh - top;
         $dom.css({
             width: ww,
             height: bh

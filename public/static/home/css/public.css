@@ -467,14 +467,19 @@ img{
     }
 }
 
+.fuller-container{
+    padding-top: 192px;
+}
+
 @media screen and (max-width: 980px) {
+    .fuller-container{ padding-top: 100px;}
     /*导航*/
     .head-nav-bar{ display: none;}
     .inner-wrap{ padding: 0 30px; }
     .nav-wrap ul.set li{ margin-bottom: 30px;}
     .nav-con-wrap .wrap{ margin-top: 80px;}
     /*菜单按钮*/
-    .btn-menu{ left: 20px;}
+    .btn-menu{ left: 20px; top: 30px;}
     .btn-menu a{ width:42px; height: 42px;}
     .btn-menu li{ width:42px;}
 }
