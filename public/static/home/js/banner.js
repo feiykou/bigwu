@@ -18,7 +18,7 @@ var bannerJson = {
         this.init(opts);
     },
     init: function(opts){
-        that.curTime = new Data();
+        this.curTime = new Date();
         var $banner = $(".bw-banner");
         var $blis = $banner.find("li");
         var $dot_wrap = $banner.find(".dot-wrap");
