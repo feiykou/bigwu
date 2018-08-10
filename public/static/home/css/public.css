@@ -349,19 +349,18 @@ img{
     margin-top: -20px;
 }
 .nav-con-wrap .wrap .nav-wrap{
-	/*display: block;*/
-    display: flex;
-    flex-direction: row-reverse;
+	display: block;
+    /* display: flex; */
+    /*flex-direction: row-reverse;*/
     pointer-events: auto;
-    flex-wrap: wrap;
 
 
 }
 .nav-con-wrap .nav-wrap .second{
-    /*float: right;*/
+    float: right;
 }
 .nav-con-wrap .nav-wrap .global{
-    /*float: right;*/
+    float: right;
 	width: 246px;
 }
 .nav-con-wrap .nav-wrap .second ul{
