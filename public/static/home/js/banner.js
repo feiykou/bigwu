@@ -179,7 +179,8 @@ var bannerJson = {
         var that = this;
         that.timer = setInterval(function(){
             that.index++;
-            that.index = that.index>=that.len?0:that.index;
+            that.critiIndex();
+            // that.index = that.index>=that.len?0:that.index;
             that.auto(opts,$blis,$dot_wrap);
         },opts.setTime);
     }
