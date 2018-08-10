@@ -443,6 +443,7 @@ img{
     margin-bottom: 10px;
 }
 .nav-con-wrap .nav-wrap .second .row .r-list{
+    float: right;
     /*-ms-writing-mode: tb-rl;*/
     /*-webkit-writing-mode: vertical-rl;*/
     /*writing-mode: vertical-rl;*/
