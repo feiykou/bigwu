@@ -353,6 +353,7 @@ img{
     display: flex;
     flex-direction: row-reverse;
     pointer-events: auto;
+    flex-wrap: wrap;
 
 
 }
