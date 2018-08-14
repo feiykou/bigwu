@@ -91,6 +91,7 @@ class Product extends Base
             'introduce'      =>      $data['introduce'],
             'main_img_url'   =>      empty($data['main_img_url'])?'':$data['main_img_url'],
             'imgs_url'       =>      empty($data['imgs_url'])?'':$data['imgs_url'],
+            'side_img'       =>      empty($data['side_img'])?'':$data['side_img'],
             'keywords'       =>      $data['keywords'],
             'description'    =>      $data['description'],
             'detailCon'      =>      empty($data['detailCon'])?'':$data['detailCon'],
@@ -136,6 +137,7 @@ class Product extends Base
         $proAllData = $this->model->getProData($id);
         $proAllData['imgs_url'] = explode(';',trim($proAllData['imgs_url'],';'));
         $proAllData['main_img_url'] = explode(';',trim($proAllData['main_img_url'],';'));
+        $proAllData['side_img'] = explode(';',trim($proAllData['side_img'],';'));
         $proAllData['attributes'] = explode(',',$proAllData['attributes']);
         $proAllData['labelsAttr'] = explode(',',$proAllData['labelsAttr']);
         $labelsData = config('attributes.labels_type');

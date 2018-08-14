@@ -217,7 +217,7 @@ img{
 .inner-nav .nav-wrap{
     position: absolute;
     top: 65px;
-    right: 80px;
+    right: 200px;
     min-width: calc(100% - 65px);
     pointer-events: none;
     -ms-writing-mode: tb-rl;
@@ -263,7 +263,7 @@ img{
 .nav-wrap ul.set li{
     white-space: nowrap;
     font-size: 20px;
-    line-height: 42px;
+    line-height: 36px;
 
 }
 .nav-wrap ul.set li a{
@@ -286,11 +286,16 @@ img{
 }
 .nav-wrap ul.sub li{
     line-height: 22px;
+    font-family: '宋体';
 }
 .nav-wrap ul.sub li a{
-    color: #7b7c7b;
+    font-size: 14px;
+    letter-spacing: .18em;
+    color: #787878;
+}
+.nav-wrap ul.zhaopin li a{
     font-size: 12px;
-    letter-spacing: .05em;
+    color: #646464;
 }
 
 .nav-wrap ul li a:hover{
@@ -361,7 +366,7 @@ img{
 }
 .nav-con-wrap .nav-wrap .global{
     float: right;
-	width: 246px;
+	width: 296px;
 }
 .nav-con-wrap .nav-wrap .second ul{
     word-break:break-all;
