@@ -431,12 +431,11 @@ img{
     -webkit-transform-origin: 50% 0;
     -ms-transform-origin: 50% 0;
     transform-origin: 50% 0;
-    letter-spacing: -.08em;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     line-height: inherit;
     display: inline-block;
-    letter-spacing: .1em!important;
+    letter-spacing: .26em!important;
     text-align: left;
 	font-size: 17px;
 }
