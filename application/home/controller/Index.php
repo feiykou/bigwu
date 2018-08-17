@@ -22,4 +22,7 @@ class Index extends Controller
     public function pany(){
         return $this->fetch();
     }
+    public function contact(){
+        return $this->fetch();
+    }
 }

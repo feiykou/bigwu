@@ -12,3 +12,4 @@ use think\Route;
 Route::get('/home','home/index/index');
 Route::get('/detail','home/index/detail');
 Route::get('/pany','home/index/pany');
+Route::get('/contact','home/index/contact');
