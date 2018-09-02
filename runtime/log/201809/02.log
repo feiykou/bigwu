@@ -368,3 +368,127 @@
 [ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\product.html [ array (
 ) ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-02T17:36:36+08:00 ] 127.0.0.1 GET /product
+[ info ] bigwu.com/product [运行时间：0.037521s][吞吐率：26.65req/s] [内存消耗：1,520.40kb] [文件加载：38]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'product',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/product' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->product[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\product.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-02T17:36:37+08:00 ] 127.0.0.1 GET /product
+[ info ] bigwu.com/product [运行时间：0.028935s][吞吐率：34.56req/s] [内存消耗：1,520.40kb] [文件加载：38]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'product',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/product' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->product[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\product.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-02T17:36:37+08:00 ] 127.0.0.1 GET /product
+[ info ] bigwu.com/product [运行时间：0.044408s][吞吐率：22.52req/s] [内存消耗：1,520.40kb] [文件加载：38]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'product',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/product' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->product[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\product.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-02T17:36:37+08:00 ] 127.0.0.1 GET /product
+[ info ] bigwu.com/product [运行时间：0.029645s][吞吐率：33.73req/s] [内存消耗：1,520.40kb] [文件加载：38]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'product',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/product' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->product[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\product.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
