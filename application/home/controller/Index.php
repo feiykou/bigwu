@@ -19,6 +19,9 @@ class Index extends Controller
     public function detail(){
         return $this->fetch();
     }
+    public function product(){
+        return $this->fetch();
+    }
     public function pany(){
         return $this->fetch();
     }

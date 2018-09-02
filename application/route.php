@@ -10,6 +10,7 @@
 // +----------------------------------------------------------------------
 use think\Route;
 Route::get('/home','home/index/index');
+Route::get('/product','home/index/product');
 Route::get('/detail','home/index/detail');
 Route::get('/pany','home/index/pany');
 Route::get('/contact','home/index/contact');

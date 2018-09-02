@@ -1,25 +1,26 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:80:"D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\detail.html";i:1535880048;}*/ ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>详情页 - 飞扬</title>
-    <link rel="stylesheet" href="__STATIC__/home/css/public.css">
-    <link rel="stylesheet" href="__STATIC__/home/css/style.css">
+    <link rel="stylesheet" href="/static/home/css/public.css">
+    <link rel="stylesheet" href="/static/home/css/style.css">
 </head>
 <body>
     <div class="header">
         <div class="container header-container clearfix">
             <div class="logo-wrap fl">
-                <img src="__STATIC__/home/images/logo.png" alt="">
+                <img src="/static/home/images/logo.png" alt="">
             </div>
         </div>
     </div>
     <div class="main">
         <div class="container prodetail-container">
             <div class="img-preview">
-                <img src="__STATIC__/home/images/detail1.png" alt="">
+                <img src="/static/home/images/detail1.png" alt="">
             </div>
             <div class="detail-con">
                 <h1 class="main-tit">陶瓷碗 - 实用与美观的最佳平衡</h1>
