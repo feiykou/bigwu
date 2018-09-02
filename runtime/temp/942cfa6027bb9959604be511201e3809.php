@@ -1,6 +1,6 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:80:"D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\detail.html";i:1535880048;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:80:"D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\detail.html";i:1535880524;}*/ ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

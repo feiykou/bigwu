@@ -20,3 +20,15 @@ ul.pro-list-wrap li{ float: left; width: 251px; height: 198px; text-align: cente
 .btn-buy{ text-align: center; padding-top: 50px;}
 .btn-buy a{ display: inline-block; width: 42px; line-height: 24px; padding: 15px 25px; background-color: #000; color: #fff;  }
 .back-btn a{display: inline-block; font-size: 22px; margin-top: 60px;}
+
+/* 联系我们 */
+.container{ color: #333;}
+.contact-container{ padding-left: 600px; font-weight: bold;}
+.tit-nav{ font-size: 20px; line-height: 22px;}
+.tit-nav dt h1{ height: 22px; font-weight: bold; border-right: 2px solid #333; padding-right: 15px; margin-right: 15px;}
+.share-wrap{ margin: 100px 0;}
+.share-wrap li{ float: left; margin-right: 150px; color: #172049;}
+.share-wrap li img{ vertical-align: middle; margin-right: 20px;}
+.address-wrap .address{ line-height: 26px; margin-right: 50px; letter-spacing: .06em;}
+.address-wrap .map-wrap{ padding-top: 20px; }
+.tel-wrap{ line-height: 26px; margin-top: 100px;}
