@@ -32,3 +32,19 @@ ul.pro-list-wrap li{ float: left; width: 251px; height: 198px; text-align: cente
 .address-wrap .address{ line-height: 26px; margin-right: 50px; letter-spacing: .06em;}
 .address-wrap .map-wrap{ padding-top: 20px; }
 .tel-wrap{ line-height: 26px; margin-top: 100px;}
+
+/* 关于我们 */
+.about-container{ width: 860px; margin-left: 110px;}
+.section{ margin-bottom: 120px;}
+.about-nav li{ float: left; }
+.about-nav li a{ display: block; height: 16px; line-height: 16px; border-right: 1px solid #808080; color: #808080; font-size: 18px; transition: all .3s; padding-right: 18px; margin-right: 18px;}
+.about-nav li a:hover,.about-nav li.active a{ color: #161f4a; transition: all .3s;}
+.tit-item{ width: 140px; color: #333;}
+.sec-wrap{ margin: 50px 0 60px; }
+.content-item{ overflow: hidden;}
+.content-item p.item{ line-height: 30px; text-indent: 2em; margin-bottom: 30px; text-align: justify;}
+.other-wrap{ padding-left: 40px;}
+.other-wrap li{ line-height: 30px; border-bottom: 1px solid #999; padding: 10px 0; overflow: hidden;}
+.other-wrap li .left-tit{ float: left;  width: 100px;}
+.other-wrap li .right-con{ overflow: hidden;}
+.other-wrap li.slogan .left-tit{ height: 80px; }

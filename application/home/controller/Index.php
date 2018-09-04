@@ -22,7 +22,7 @@ class Index extends Controller
     public function product(){
         return $this->fetch();
     }
-    public function pany(){
+    public function about(){
         return $this->fetch();
     }
     public function contact(){
