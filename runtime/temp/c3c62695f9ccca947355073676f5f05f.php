@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html";i:1536547081;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html";i:1536549609;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +15,7 @@
 <div class="header">
 	<div class="container header-container clearfix">
 		<div class="logo-wrap fl">
-			<img src="/static/home/images/logo.png" alt="">
+			<a href="/"><img src="/static/home/images/logo.png" alt=""></a>
 		</div>
 		<div class="header-nav fr font20">
 			<ul class="clearfix">
