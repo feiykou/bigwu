@@ -84,7 +84,6 @@ ul.pro-list-wrap li span img{ width: 60%; }
     box-sizing: border-box;
 }
 .about-swiper-container{
-    height: 10rem;
     padding-bottom: 1rem;
 }
 .swiper-pagination{
@@ -97,7 +96,20 @@ ul.pro-list-wrap li span img{ width: 60%; }
     opacity: 1;
 }
 
-/* 联系我们 */
+.section1{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.section1 .about-nav{
+    flex: 1.36rem 0 0;
+}
+.section1 .about-wrap,.about-con-wrap,.about-swiper-container{
+    flex: 1;
+    height: 94%;
+}
+
+    /* 联系我们 */
 .container{ color: #333;}
 .tit-nav dt,.tit-nav dd{ line-height: 1.2; }
 .tit-nav dt h1{ border-right: 2px solid #333; padding-right: 15px; margin-right: 15px;}
@@ -162,8 +174,9 @@ ul.pro-list-wrap li span img{ width: 60%; }
     .btn-buy{ padding-top: 50px;}
     .btn-buy a{width: 42px; line-height: 24px; padding: 15px 25px; }
     .back-btn a{display: inline-block;  margin-top: 60px;}
-
-}
+    
+    .section1{ display: block;}
+}   
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
 @media (min-width: 992px) {
