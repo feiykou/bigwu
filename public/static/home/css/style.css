@@ -8,7 +8,7 @@
 
 
 /* 头部 */
-.header{ position: relative; background-color: #fff; height: 4.08rem;}
+.header{ position: absolute; left:0; right:0; top: 0; z-index: 100; background-color: #fff; height: 4.08rem;}
 .header-container{ padding: 0.8rem 0 0 0.533333rem;}
 .header-nav{ position: absolute; right: 0.533333rem; bottom: 0;}
 .header-nav li{ position: relative; float: left; margin-left: 0.4rem;}
@@ -33,11 +33,10 @@
 .container{padding-left: 0.533333rem; padding-right: 0.533333rem; }
 
 /* 首页 */
-.header{ position: absolute; top: 0; z-index: 100;}
 .index-container{ position: relative; height: 100%; background-color: #161f4a;}
 .block-wrap{ position: absolute; left: 5%; bottom: 5%; color: #fff;}
 .block-wrap p{ line-height: 1.42; letter-spacing: .06em;}
-
+.main{ padding-top: 4.08rem;}
 
 /* 产品列表页 */
 ul.pro-list-wrap{ display: flex; justify-content: space-between; flex-wrap: wrap;}
