@@ -29,6 +29,7 @@
     font-feature-settings: 'vpal';
 }
 .header-nav li a:hover{ transition: all .3s;}
+/*.header-nav .about-index-nav span{ left: 14px;}*/
 .logo-wrap img{ width: 5.133333rem; height: 1.826667rem; }
 .container{padding-left: 0.533333rem; padding-right: 0.533333rem; }
 
@@ -47,6 +48,7 @@ ul.pro-list-wrap li span img{ width: 60%; }
 
 /* 产品详情页 */
 .prodetail-container{}
+.img-preview-container .swiper-slide img{ width: 100%;}
 .img-preview{ padding: 1.333333rem 0; }
 .img-preview img{ width: 100%; }
 .main-tit{ text-align: center; line-height: 1.3; margin: 0.8rem 0 0.666667rem; }
@@ -59,7 +61,7 @@ ul.pro-list-wrap li span img{ width: 60%; }
 .btn-buy{ text-align: center; padding-top: 0.666667rem;}
 .btn-buy a{ display: inline-block; width: 1.12rem; line-height: 24px; padding: 0.2rem 0.333333rem; background-color: #000; color: #fff;  }
 .back-btn a{ display: block; text-align: center; margin-top: 1.6rem; }
-
+.prodetail-container .swiper-button-next,.prodetail-container .swiper-button-prev{ display: none;}
 
 /* 关于我们 */
 .about-main{ box-sizing: border-box; padding-top: 4.08rem; }
@@ -89,7 +91,7 @@ ul.pro-list-wrap li span img{ width: 60%; }
 .swiper-pagination{
     position: static;
 }
-.swiper-pagination-bullet{
+.about-container .swiper-pagination-bullet{
     width: auto;
     height: auto;
     background: transparent;
@@ -174,6 +176,7 @@ ul.pro-list-wrap li span img{ width: 60%; }
     .btn-buy a{width: 42px; line-height: 24px; padding: 15px 25px; }
     .back-btn a{display: inline-block;  margin-top: 60px;}
     .section1{ display: block;}
+    .prodetail-container .swiper-button-next,.prodetail-container .swiper-button-prev{ display: block;}
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */

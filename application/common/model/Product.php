@@ -13,7 +13,7 @@ use think\Model;
 
 class Product extends Model
 {
-    protected $autoWriteTimestamp = true;
+    protected $autoWriteTimestamp = 'datetime';
     public function procate(){
         return $this->hasMany('procate','id','pro_cate_id')->field('name');
     }
