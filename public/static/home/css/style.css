@@ -67,7 +67,7 @@ ul.pro-list-wrap li span img{ width: 60%; }
 .about-nav li.active span{ color: #161f4a; transition: all .3s;}
 .about-wrap{ margin: 0.533333rem 0 60px; }
 .about-con-wrap{ position: relative;  border-bottom: 1px solid #fff;}
-.about-con-wrap:after{ content: ' '; position: absolute; left: 0; right: 0; bottom: -6px; z-index: 10; height: 2.8rem;/* background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(255,255,255,0)),color-stop(70%, #fff));*/ background-image: linear-gradient(180deg,rgba(255,255,255,0) 0%,#fff 85%);}
+.about-swiper-container:after{ content: ' '; position: absolute; left: 0; right: 0; bottom: -6px; z-index: 10; height: 2.8rem;/* background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(255,255,255,0)),color-stop(70%, #fff));*/ background-image: linear-gradient(180deg,rgba(255,255,255,0) 0%,#fff 85%);}
 .about-wrap p.item{ margin-bottom: 0.533333rem; text-align: justify; }
 .other-wrap li{ border-bottom: 0.013333rem solid #999; padding: 0.266667rem 0; overflow: hidden;}
 .other-wrap li .left-tit{ float: left; width: 2.0rem;}

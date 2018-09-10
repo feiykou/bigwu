@@ -1346,3 +1346,174 @@
   '/static/home/js/swiper_min_js_map' => '',
 )
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T10:52:23+08:00 ] 127.0.0.1 GET /about
+[ info ] bigwu.com/about [运行时间：0.028183s][吞吐率：35.48req/s] [内存消耗：1,316.45kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'about',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/about' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->about[ F:\phpStudy\WWW\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\bigwu\public/../application/home\view\index\about.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T10:52:23+08:00 ] 127.0.0.1 GET /static/home/js/swiper.min.js.map
+[ info ] bigwu.com/static/home/js/swiper.min.js.map [运行时间：0.015620s][吞吐率：64.02req/s] [内存消耗：1,025.77kb] [文件加载：33]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'home',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/home/js/swiper_min_js_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T10:52:24+08:00 ] 127.0.0.1 GET /about
+[ info ] bigwu.com/about [运行时间：0.030057s][吞吐率：33.27req/s] [内存消耗：1,316.45kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'about',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/about' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->about[ F:\phpStudy\WWW\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\bigwu\public/../application/home\view\index\about.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T10:52:24+08:00 ] 127.0.0.1 GET /static/home/js/swiper.min.js.map
+[ info ] bigwu.com/static/home/js/swiper.min.js.map [运行时间：0.014787s][吞吐率：67.63req/s] [内存消耗：1,025.77kb] [文件加载：33]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'home',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/home/js/swiper_min_js_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T10:52:27+08:00 ] 127.0.0.1 GET /about
+[ info ] bigwu.com/about [运行时间：0.027827s][吞吐率：35.94req/s] [内存消耗：1,316.45kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'about',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/about' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->about[ F:\phpStudy\WWW\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\bigwu\public/../application/home\view\index\about.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T10:52:27+08:00 ] 127.0.0.1 GET /static/home/js/swiper.min.js.map
+[ info ] bigwu.com/static/home/js/swiper.min.js.map [运行时间：0.015182s][吞吐率：65.87req/s] [内存消耗：1,025.77kb] [文件加载：33]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'home',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/home/js/swiper_min_js_map' => '',
+)
+[ info ] [ LOG ] INIT File
