@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"F:\phpStudy\WWW\bigwu\public/../application/home\view\index\detail.html";i:1536547058;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页 - 大误</title>
-    <script src="__STATIC__/home/js/flexible.js"></script>
-    <script src="__STATIC__/home/js/flexible_css.js"></script>
-    <link rel="stylesheet" href="__STATIC__/home/css/public.css">
-    <link rel="stylesheet" href="__STATIC__/home/css/style.css">
+    <script src="/static/home/js/flexible.js"></script>
+    <script src="/static/home/js/flexible_css.js"></script>
+    <link rel="stylesheet" href="/static/home/css/public.css">
+    <link rel="stylesheet" href="/static/home/css/style.css">
     <style>
         .line-wrap{ text-align: center;}
     </style>
@@ -17,14 +18,14 @@
 <div class="header">
     <div class="container header-container clearfix">
         <div class="logo-wrap fl">
-            <img src="__STATIC__/home/images/logo.png" alt="">
+            <img src="/static/home/images/logo.png" alt="">
         </div>
     </div>
 </div>
 <div class="main">
     <div class="container prodetail-container">
         <div class="img-preview">
-            <img src="__STATIC__/home/images/detail1.png" alt="">
+            <img src="/static/home/images/detail1.png" alt="">
         </div>
         <div class="detail-con font16">
             <h1 class="main-tit font22">陶瓷碗</h1>

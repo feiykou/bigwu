@@ -1,0 +1,144 @@
+.index-container{ position: relative; height: 100%; background-color: #161f4a;}
+.block-wrap{ position: absolute; right: 30%; top: 40%; color: #fff; font-size: 26px;}
+.block-wrap p{ line-height: 46px; letter-spacing: .1em;}
+
+/* 产品列表页 */
+.product-container{ width: 858px; overflow: hidden; margin: 0 auto;}
+ul.pro-list-wrap{ margin-right: -60px; }
+ul.pro-list-wrap li{ float: left; width: 33.33%; margin-bottom: 55px;}
+ul.pro-list-wrap li span{ display: block; margin-right: 55px; padding: 30px 0; background-color: #e9e9e9; text-align: center;}
+ul.pro-list-wrap li span img{ width: 60%; }
+
+/* 产品详情页 */
+.prodetail-container{ width: 980px; margin-left: 110px;}
+.detail-con{ text-align: center}
+.main-tit{ line-height: 32px; font-size: 24px; margin: 30px 0 25px; }
+.detail-con p{ line-height: 32px;}
+.detail-con .line-wrap span.line{ margin: 60px 0; display: inline-block; height: 60px; border-right: 2px solid #333; }
+.detail-con .detail-param{ text-align: center;}
+.detail-con .detail-param ul{ display: inline-block;}
+.detail-con .detail-param li{ line-height: 56px; text-align: left;}
+.detail-con .detail-param li b{ font-weight: normal; display: inline-block;  width: 146px;}
+.btn-buy{ text-align: center; padding-top: 50px;}
+.btn-buy a{ display: inline-block; width: 42px; line-height: 24px; padding: 15px 25px; background-color: #000; color: #fff;  }
+.back-btn a{display: inline-block; font-size: 22px; margin-top: 60px;}
+
+/* 联系我们 */
+.container{ color: #333;}
+.contact-container{ width: 500px; margin:0 auto; padding-left: 100px;}
+.tit-nav{ font-size: 20px; line-height: 22px;}
+.tit-nav dt h1{ height: 22px;  border-right: 2px solid #333; padding-right: 15px; margin-right: 15px;}
+.share-wrap{ margin: 100px 0 70px;}
+.share-wrap li{ float: left; padding:0 150px 30px 0; color: #172049; cursor: pointer;}
+.share-wrap li:nth-child(2){ padding-right: 0;}
+.share-wrap li img.share-icon{ vertical-align: middle; margin-right: 20px;}
+
+
+.address-wrap .address{ line-height: 26px; margin-right: 50px; letter-spacing: .06em;}
+.address-wrap .map-wrap{ padding-top: 20px; }
+.tel-wrap{ line-height: 26px; margin-top: 100px;}
+
+/* 关于我们 */
+/* .about-container{ width: 860px; margin-left: 110px;}
+.section{ margin-bottom: 120px;}
+.about-nav li{ float: left; }
+.about-nav li span{ cursor: pointer; display: block; height: 16px; line-height: 16px; border-right: 1px solid #808080; color: #808080; font-size: 18px; transition: all .3s; padding-right: 18px; margin-right: 18px;}
+.about-nav li span:hover,.about-nav li.active span{ color: #161f4a; transition: all .3s;}
+.tit-item{ width: 140px; color: #333;}
+.sec-wrap{ margin: 50px 0 60px; }
+.content-item{ overflow: hidden;}
+.content-item p.item{ text-indent: 2em; margin-bottom: 30px; text-align: justify;}
+.other-wrap{ padding-left: 40px;}
+.other-wrap li{ line-height: 30px; border-bottom: 1px solid #999; padding: 10px 0; overflow: hidden;}
+.other-wrap li .left-tit{ float: left;  width: 100px;}
+.other-wrap li .right-con{ display: block; overflow: hidden;} */
+
+
+
+@media screen and (min-width: 980px){
+    .share-wrap li.weixin-wrap{ position: relative;}
+    .share-wrap li.weixin-wrap .weixin-img{ display: none; position: absolute; left: -46px; top: 50px; border: 1px solid #ddd; border-radius: 3px; }
+    .share-wrap li.weixin-wrap:hover .weixin-img{ display: block;}
+    .weixin-img span{ position: absolute; left: 89px; top: -10px; width: 20px; height: 10px; overflow: hidden; }
+    .weixin-img span:before{ display: inline-block; position: relative; top: -10px; content: ' ';border-color: #ddd transparent #ddd transparent; border-style: solid; border-width: 10px; }
+    .weixin-img img{ width: 200px; border-radius: 3px;}
+}
+
+
+@media screen and (max-width: 1200px){
+    .contact-container{ padding-left: 400px;}
+    .about-container{ width: 776px; }
+    .prodetail-container{ width: auto; padding: 0 20px; margin-left: 0; }
+    .img-preview{ text-align: center; }
+}
+
+@media screen and (max-width: 980px){
+    /*首页*/
+    /* .header-container{ padding: 60px 0 0 30px;}
+    .header{ height: 256px; }
+    .logo-wrap img{ width: 200px;}
+    .header-nav{ right: 3%; }
+    .header-nav ul{ margin-top: 162px;} */
+    .block-wrap{ right: auto; left: 5%; top: auto; bottom: 5%; font-size: 20px; }
+    .block-wrap p{line-height: 30px; }
+    /*联系我们*/
+    .contact-container{ padding-left: 100px;}
+    .share-wrap li.weixin-wrap .weixin-img{ display: none; position: fixed; top: 0; left: 0; width: 100%; text-align: center; z-index: 2;}
+    .weixin-img img{ width: 80%;}
+    /*产品*/
+    .product-container{ width: auto; padding: 0 30px;}
+    ul.pro-list-wrap{ margin-right: -20px;}
+    ul.pro-list-wrap li{ margin-bottom: 20px;}
+    ul.pro-list-wrap li span{ margin-right: 20px; }
+    /*产品详情*/
+    .detail-con{ text-align: left;}
+    .detail-con p{ margin-bottom: 15px;}
+    .img-preview img{ width: 100%;}
+    /*关于我们*/
+    /* .about-container{ width: auto; margin:0 20px;}
+    .tit-item{ float: none; margin-bottom: 20px; font-weight: bold;}
+    .content-item{ border: 1px solid #ccc; padding: 10px 15px; border-radius: 6px;box-shadow: 0 0 5px #ccc inset;}
+    .about-nav li{ margin-bottom: 10px;}
+    .about-nav li a{ font-size: 15px; padding-right: 10px; margin-right: 10px;}
+    .sec-wrap{ margin-top: 20px;}
+    .other-wrap{ padding-left: 0;} */
+
+}
+
+
+@media screen and (max-width: 640px){
+    .share-wrap li{ margin-right: 50px;}
+    .share-wrap li:nth-child(2){ margin-right: 0;}
+    .contact-container{ width: auto; padding:0 20px; }
+    .map-wrap{ display: none;}
+    /*产品*/
+    ul.pro-list-wrap li{ width: 50%; }
+    /*关于我们*/
+    /* .share-wrap li{ margin-right: 50px;}
+    .share-wrap li:nth-child(2){ margin-right: 0;}
+    .contact-container{ width: auto; padding:0 20px; }
+    .map-wrap{ display: none;} */
+}
+
+.header-container{
+    padding: 0.8rem 0 0 0.8rem;
+}
+
+
+
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) { 
+
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) { 
+
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) { 
+
+}
+

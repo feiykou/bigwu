@@ -1,20 +1,21 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"F:\phpStudy\WWW\bigwu\public/../application/home\view\index\about.html";i:1536547025;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>首页 - 大误</title>
-	<link rel="stylesheet" href="__STATIC__/home/css/public.css">
-	<link rel="stylesheet" href="__STATIC__/home/css/swiper.min.css">
-	<link rel="stylesheet" href="__STATIC__/home/css/style.css">
-	<script src="__STATIC__/home/js/flexible.js"></script>
-	<script src="__STATIC__/home/js/flexible_css.js"></script>
+	<link rel="stylesheet" href="/static/home/css/public.css">
+	<link rel="stylesheet" href="/static/home/css/swiper.min.css">
+	<link rel="stylesheet" href="/static/home/css/style.css">
+	<script src="/static/home/js/flexible.js"></script>
+	<script src="/static/home/js/flexible_css.js"></script>
 </head>
 <body>
 <div class="header">
 	<div class="container header-container clearfix">
 		<div class="logo-wrap fl">
-			<img src="__STATIC__/home/images/logo.png" alt="">
+			<img src="/static/home/images/logo.png" alt="">
 		</div>
 	</div>
 </div>
@@ -110,12 +111,12 @@
 </div>
 
 <!-- <script src="js/jquery.js"></script> -->
-<script src="__STATIC__/home/js/zepto.js"></script>
-<script src="__STATIC__/home/js/touch.js"></script>
-<script src="__STATIC__/home/js/event.js"></script>
-<script src="__STATIC__/home/js/fx.js"></script>
-<script src="__STATIC__/home/js/scroll.js"></script>
-<script src="__STATIC__/home/js/swiper.min.js"></script>
+<script src="/static/home/js/zepto.js"></script>
+<script src="/static/home/js/touch.js"></script>
+<script src="/static/home/js/event.js"></script>
+<script src="/static/home/js/fx.js"></script>
+<script src="/static/home/js/scroll.js"></script>
+<script src="/static/home/js/swiper.min.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
         direction: 'vertical',
