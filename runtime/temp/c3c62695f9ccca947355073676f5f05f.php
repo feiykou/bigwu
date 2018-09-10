@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html";i:1536549609;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html";i:1536549693;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +17,7 @@
 		<div class="logo-wrap fl">
 			<a href="/"><img src="/static/home/images/logo.png" alt=""></a>
 		</div>
-		<div class="header-nav fr font20">
+		<div class="header-nav fr font16">
 			<ul class="clearfix">
 				<li><a href="#">大误<span>About</span></a></li>
 				<li><a href="#">产品<span>Work</span></a></li>
@@ -28,7 +28,7 @@
 </div>
 <div class="main">
 	<div class="container index-container">
-		<div class="block-wrap font22">
+		<div class="block-wrap font20">
 			<p>用合理的低价</p>
 			<p>购买这样就好的产品</p>
 		</div>

@@ -15,7 +15,7 @@
 .header-nav li a{ font-weight: bold;}
 .header-nav li span{ 
     position: absolute; 
-    top:60px; left: 0; 
+    top:43px; left: 0;
     z-index: 9;
     color: #fff;
     line-height: 40px;
@@ -104,9 +104,15 @@ ul.pro-list-wrap li span img{ width: 60%; }
 
 /* 小屏幕（平板，大于等于 768px） */
 @media (min-width: 768px) { 
-    .header-nav{ position: absolute; right: 20%;}
+    .header-nav{ position: absolute; right: 20%; font-size: 20px;}
+    .header-nav li span{ top: 60px;}
     .block-wrap{ position: absolute; left: auto; right: 30%; top: 40%; color: #fff;}
-    .block-wrap p{ line-height: 46px; letter-spacing: .1em;}
+    .block-wrap p{ line-height: 36px; letter-spacing: .1em;}
+    .block-wrap{font-size: 22px;}
+    [data-dpr="2"] .header-nav{ font-size: 40px;}
+    [data-dpr="2"] .block-wrap{ font-size: 44px;}
+    [data-dpr="3"] .header-nav {font-size: 60px;}
+    [data-dpr="3"] .block-wrap {font-size: 72px;}
 
     /* 产品列表页 */
     .product-container{ width: 858px; overflow: hidden; margin: 0 auto;}

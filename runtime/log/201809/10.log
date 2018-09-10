@@ -1662,3 +1662,451 @@
 [ info ] [ VIEW ] F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html [ array (
 ) ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T11:22:57+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.030009s][吞吐率：33.32req/s] [内存消耗：1,446.94kb] [文件加载：41]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ F:\phpStudy\WWW\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T11:23:42+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.018615s][吞吐率：53.72req/s] [内存消耗：1,306.20kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ F:\phpStudy\WWW\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T11:23:42+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.041374s][吞吐率：24.17req/s] [内存消耗：1,306.20kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ F:\phpStudy\WWW\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T11:23:43+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.037580s][吞吐率：26.61req/s] [内存消耗：1,306.20kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ F:\phpStudy\WWW\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T11:27:03+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.037664s][吞吐率：26.55req/s] [内存消耗：1,306.20kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ F:\phpStudy\WWW\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T11:27:04+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.032576s][吞吐率：30.70req/s] [内存消耗：1,306.20kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ F:\phpStudy\WWW\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T11:27:04+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.015216s][吞吐率：65.72req/s] [内存消耗：1,306.20kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ F:\phpStudy\WWW\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T11:27:04+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.016262s][吞吐率：61.49req/s] [内存消耗：1,306.20kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ F:\phpStudy\WWW\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T11:27:26+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.016712s][吞吐率：59.84req/s] [内存消耗：1,306.20kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ F:\phpStudy\WWW\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T11:27:47+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.016926s][吞吐率：59.08req/s] [内存消耗：1,306.20kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ F:\phpStudy\WWW\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T11:27:50+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.016672s][吞吐率：59.98req/s] [内存消耗：1,306.20kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ F:\phpStudy\WWW\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T11:28:55+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.022972s][吞吐率：43.53req/s] [内存消耗：1,306.23kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ F:\phpStudy\WWW\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T11:28:56+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.033769s][吞吐率：29.61req/s] [内存消耗：1,306.23kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ F:\phpStudy\WWW\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T11:28:56+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.022512s][吞吐率：44.42req/s] [内存消耗：1,306.23kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\WWW\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3879080960',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'bigwu.com',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ F:\phpStudy\WWW\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudy\WWW\bigwu\public/../application/home\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
