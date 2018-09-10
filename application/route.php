@@ -14,3 +14,4 @@ Route::get('/product','home/index/product');
 Route::get('/detail','home/index/detail');
 Route::get('/about','home/index/about');
 Route::get('/contact','home/index/contact');
+Route::get('/map','home/index/map');

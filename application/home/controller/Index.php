@@ -28,4 +28,8 @@ class Index extends Controller
     public function contact(){
         return $this->fetch();
     }
+    public function map(){
+        return $this->fetch();
+    }
+
 }
