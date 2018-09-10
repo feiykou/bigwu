@@ -1,9 +1,9 @@
 
-.blur {    
+.blur {
     -webkit-filter: blur(10px);
-       -moz-filter: blur(10px);
-        -ms-filter: blur(10px);    
-            filter: blur(10px);    
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
 }
 
 
@@ -13,8 +13,8 @@
 .header-nav{ position: absolute; right: 0.533333rem; bottom: 0;}
 .header-nav li{ position: relative; float: left; margin-left: 0.4rem;}
 .header-nav li a{ font-weight: bold;}
-.header-nav li span{ 
-    position: absolute; 
+.header-nav li span{
+    position: absolute;
     top:43px; left: 0;
     z-index: 9;
     color: #fff;
@@ -34,7 +34,7 @@
 
 /* 首页 */
 .index-container{ position: relative; height: 100%; background-color: #161f4a;}
-.block-wrap{ position: absolute; left: 5%; top: auto; bottom: 5%; color: #fff;}
+.block-wrap{ position: absolute; left: 5%; bottom: 5%; color: #fff;}
 .block-wrap p{ line-height: 1.42; letter-spacing: .06em;}
 
 
@@ -75,35 +75,35 @@ ul.pro-list-wrap li span img{ width: 60%; }
 .swiper-container {
     width: 100%;
     overflow: hidden;
-  }
-  .swiper-slide {
+}
+.swiper-slide {
     height: auto;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-  }
-  .about-swiper-container{
-      height: 8rem;
-      padding-bottom: 1rem;
-  }
+}
+.about-swiper-container{
+    height: 8rem;
+    padding-bottom: 1rem;
+}
 
 /* 联系我们 */
 .container{ color: #333;}
-.tit-nav dt,.tit-nav dd{ line-height: 1; }
+.tit-nav dt,.tit-nav dd{ line-height: 1.2; }
 .tit-nav dt h1{ border-right: 2px solid #333; padding-right: 15px; margin-right: 15px;}
-.share-wrap{ margin: 1.333333rem 0 1.333333rem;}
+.share-wrap{ margin: 2.666667rem 0 1.333333rem;}
 .share-wrap li{ float: left; padding:0 1.333333rem 0.4rem 0; color: #172049; cursor: pointer;}
 .share-wrap li:nth-child(2){ padding-right: 0;}
-.share-wrap li img.share-icon{ width: 1.12rem; height: 0.96rem; vertical-align: middle; margin-right: 0.266667rem;}
+.share-wrap li img.share-icon{ width: 0.8rem;  vertical-align: middle; margin-right: 0.266667rem;}
 .phone-weixin-img{ position: fixed; top: 50%; left: 0; right: 0; margin-top: -4.0rem;  z-index: 2; text-align: center;}
 .phone-weixin-img img{ width: 8.0rem; }
 .address-wrap .address{ line-height: 1.42; letter-spacing: .06em;}
-.address-wrap .map-wrap{ padding-top: 0.533333rem; }
-.address-wrap .map-wrap img{ width: 1.12rem; height: 1.226667rem; }
+.address-wrap .map-wrap{ padding-top: 0.133333rem; }
+.address-wrap .map-wrap img{ width: 1rem; }
 .tel-wrap{ line-height: 1.6; margin-top:1.6rem;}
 
 
 /* 小屏幕（平板，大于等于 768px） */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
     .header-nav{ position: absolute; right: 20%; font-size: 20px;}
     .header-nav li span{ top: 60px;}
     .block-wrap{ position: absolute; left: auto; right: 30%; top: 40%; color: #fff;}
@@ -122,7 +122,7 @@ ul.pro-list-wrap li span img{ width: 60%; }
 
     /* 联系我们 */
     .contact-container{ width: 500px; margin:40px auto 0; padding-left: 100px;}
-    .tit-nav{ font-size: 20px; line-height: 22px;}
+    /*.tit-nav{ font-size: 20px; line-height: 22px;}*/
     .tit-nav dt h1{ height: 22px;  border-right: 2px solid #333; padding-right: 15px; margin-right: 15px;}
     .share-wrap{ margin: 100px 0 70px;}
     .share-wrap li{ float: left; padding:0 150px 30px 0; color: #172049; cursor: pointer;}
@@ -154,7 +154,7 @@ ul.pro-list-wrap li span img{ width: 60%; }
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
     /* 头部 */
     .header-container{ padding: 60px 0 0 110px; }
     .logo-wrap img{ width: 310px; height: 110px; }
@@ -165,7 +165,7 @@ ul.pro-list-wrap li span img{ width: 60%; }
     .about-nav li{ float: left; }
     .about-nav li span{ height: 16px; line-height: 16px; border-right: 1px solid #808080; padding-right: 18px; margin-right: 18px;}
     .about-wrap .tit-item{ float: left; width: 140px; color: #333;}
-    .sec-wrap{ margin: 50px 0 60px; }   
+    .sec-wrap{ margin: 50px 0 60px; }
     .content-item{ overflow: hidden;}
     .about-con-wrap p.item{ text-indent: 2em; margin-bottom: 30px;}
     .other-wrap{ padding-left: 40px;}
@@ -174,11 +174,11 @@ ul.pro-list-wrap li span img{ width: 60%; }
     .swiper-container{ width: auto; }
     .swiper-scrollbar,.about-con-wrap:after{ display: none;}
     .about-swiper-container{ height: auto; overflow: hidden;}
-   
+
 }
 
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
     .about-container{ width: 860px; margin-left: 110px;}
 }
 
