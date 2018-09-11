@@ -9,9 +9,6 @@
 	<script src="__STATIC__/home/js/flexible_css.js"></script>
 	<link rel="stylesheet" href="__STATIC__/home/css/public.css">
 	<link rel="stylesheet" href="__STATIC__/home/css/style.css">
-	<style>
-		.contact-mask{ position: fixed; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,.6); display: none; opacity: 0;}
-	</style>
 </head>
 <body>
 <div class="container-fluid">
@@ -45,6 +42,7 @@
 					<p>Building 9，No. 51，Nantian Road，</p>
 					<p>Haizhu District，Guangzhou，Guangdong，China</p>
 				</div>
+				<div id="allmap"></div>
 			</div>
 			<div class="tel-wrap">
 				<p>T：020-3860-8003</p>
@@ -56,14 +54,24 @@
 </div>
 <div class="contact-mask"></div>
 <div class="phone-weixin-img none"><img src="__STATIC__/home/images/weixin.jpg" alt=""></div>
-<div class="contact-mask"></div>
-<div class="phone-weixin-img none"><img src="__STATIC__/home/images/weixin.jpg" alt=""></div>
 <script src="__STATIC__/home/js/zepto.js"></script>
 <script src="__STATIC__/home/js/touch.js"></script>
 <script src="__STATIC__/home/js/event.js"></script>
 <script src="__STATIC__/home/js/fx.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZqzOzo6C7peDO1Lq6MWH8PGYYHExOkf9"></script>
 <script>
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point(113.2719437397,23.1059797775);
+    map.centerAndZoom(point, 15);
+    var marker = new BMap.Marker(point);  // 创建标注
+    map.addOverlay(marker);               // 将标注添加到地图中
+    marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
     $(function(){
+
+
+
+
         if(!IsPC()){
             $('.weixin-wrap').tap(function(){
                 $('.contact-mask').css('display','block').animate({'opacity':1},300);
