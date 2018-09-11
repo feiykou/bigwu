@@ -37,7 +37,7 @@
 .index-container{ position: relative; height: 100%; background-color: #161f4a;}
 .block-wrap{ position: absolute; left: 5%; bottom: 5%; color: #fff;}
 .block-wrap p{ line-height: 1.42; letter-spacing: .06em;}
-.main{ padding-top: 4.08rem;}
+.main{ padding: 4.08rem 0 1rem;}
 
 /* 产品列表页 */
 ul.pro-list-wrap{ display: flex; justify-content: space-between; flex-wrap: wrap;}
@@ -115,7 +115,7 @@ ul.pro-list-wrap li span img{ width: 60%; }
 .container{ color: #333;}
 .tit-nav dt,.tit-nav dd{ line-height: 1.2; }
 .tit-nav dt h1{ border-right: 2px solid #333; padding-right: 15px; margin-right: 15px;}
-.share-wrap{ margin: 1.6rem 0 0.6rem;}
+.share-wrap{ margin: 2rem 0 1rem;}
 .share-wrap li{ float: left; padding:0 1.333333rem 0.4rem 0; color: #172049; cursor: pointer;}
 .share-wrap li:nth-child(2){ padding-right: 0;}
 .share-wrap li img.share-icon{ width: 0.8rem;  vertical-align: middle; margin-right: 0.266667rem;}
@@ -124,7 +124,7 @@ ul.pro-list-wrap li span img{ width: 60%; }
 .address-wrap .address{ line-height: 1.42; letter-spacing: .06em;}
 .address-wrap .map-wrap{ padding-top: 0.133333rem; }
 .address-wrap .map-wrap img{ width: 1rem; }
-.tel-wrap{ line-height: 1.6; margin-top:0.6rem;}
+.tel-wrap{ line-height: 1.6; margin-top: 1rem;}
 .contact-mask{ position: fixed; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,.6); display: none; opacity: 0;}
 #allmap {width: 100%;height: 4.0rem;overflow: hidden;margin:0.4rem 0 0;font-family:"微软雅黑";}
 .anchorBL{display:none;}
@@ -152,12 +152,12 @@ ul.pro-list-wrap li span img{ width: 60%; }
     .contact-container{ width: 500px; margin:40px auto 0; padding-left: 100px;}
     /*.tit-nav{ font-size: 20px; line-height: 22px;}*/
     .tit-nav dt h1{ height: 22px;  border-right: 2px solid #333; padding-right: 15px; margin-right: 15px;}
-    .share-wrap{ margin:70px 0 70px;}
+    .share-wrap{ margin:100px 0 40px;}
     .share-wrap li{ float: left; padding:0 150px 30px 0; color: #172049; cursor: pointer;}
     .share-wrap li:nth-child(2){ padding-right: 0;}
     .address-wrap .address{ line-height: 26px; margin-right: 50px; letter-spacing: .06em;}
     .address-wrap .map-wrap{ padding-top: 20px; }
-    .tel-wrap{ line-height: 26px; margin-top: 100px;}
+    .tel-wrap{ line-height: 26px; margin-top: 60px;}
     .address-wrap .map-wrap img{ width: 42px; height: 46px; }
     .share-wrap li img.share-icon{ vertical-align: middle; width: 42px; height: 36px; margin-right: 20px;}
     .share-wrap li.weixin-wrap{ position: relative;}
