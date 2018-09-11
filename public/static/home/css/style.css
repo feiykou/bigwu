@@ -8,7 +8,7 @@
 
 
 /* 头部 */
-.header{ position: absolute; left:0; right:0; top: 0; z-index: 100; background-color: #fff; height: 4.08rem;}
+.header{ position: absolute; left:0; right:0; top: 0; z-index: 100; background-color: #fff; height: 4.8rem;}
 .header-container{ padding: 0.8rem 0 0 0.533333rem;}
 .header-nav{ position: absolute; right: 0.533333rem; bottom: 0;}
 .header-nav li{ position: relative; float: left; margin-left: 0.4rem;}
@@ -64,8 +64,9 @@ ul.pro-list-wrap li span img{ width: 60%; }
 .prodetail-container .swiper-button-next,.prodetail-container .swiper-button-prev{ display: none;}
 
 /* 关于我们 */
-.about-main{ box-sizing: border-box; padding-top: 4.08rem; }
+.about-main{ box-sizing: border-box; padding-top: 4.8rem; }
 .about-container,.about-main{ height:100%;}
+.about-nav{ padding: 1.5rem 0.533333rem 0;}
 .about-nav li{float: left;margin-bottom: 0.266667rem;}
 .about-nav li span{ cursor: pointer; display: block; height: 0.426667rem; line-height:1; border-right: 0.013333rem solid #808080; color: #808080; transition: all .3s; padding-right: 0.24rem; margin-right: 0.24rem; }
 .about-nav li.active span{ color: #161f4a; transition: all .3s;}
@@ -91,7 +92,7 @@ ul.pro-list-wrap li span img{ width: 60%; }
 .swiper-pagination{
     position: static;
 }
-.about-container .swiper-pagination-bullet{
+.about-nav .swiper-pagination-bullet{
     width: auto;
     height: auto;
     background: transparent;
@@ -108,7 +109,6 @@ ul.pro-list-wrap li span img{ width: 60%; }
 }
 .section1 .about-wrap,.about-con-wrap,.about-swiper-container{
     flex: 1;
-    height: 94%;
 }
 
 /* 联系我们 */
